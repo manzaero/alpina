@@ -1,0 +1,18 @@
+@import './color';
+
+.navbar {
+
+}
+.container {
+  &__font {
+    font-size: 12px;
+  }
+}
+.navbar-nav {
+  &__right {
+    padding-left: 200px;
+  }
+  &__center {
+    padding-left: 400px;
+  }
+}
