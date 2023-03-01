@@ -1,18 +1,41 @@
 @import './color';
 
 .navbar {
-
-}
-.container {
-  &__font {
+  &__header{
+    width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 6px;
     font-size: 12px;
+  }
+  &__headerSecond {
+    width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 6px;
+  }
+  &__left {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    margin-right: 100px !important;
+  }
+}
+.nav-link {
+  &__secondHeader {
+    padding: 12px !important;
   }
 }
 .navbar-nav {
-  &__right {
-    padding-left: 200px;
+  &__ma {
+    margin: 0 auto;
   }
-  &__center {
-    padding-left: 400px;
+  &__secondMa {
+    padding-left: 10px;
   }
+}
+.hr {
+  width: 100%;
+  margin: 0 auto;
 }
