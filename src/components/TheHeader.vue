@@ -2,9 +2,6 @@
   <div class="navbar">
     <nav class="navbar-expand-lg navbar__header">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
@@ -55,6 +52,9 @@
     <hr class="hr">
     <nav class="navbar-expand-lg navbar__headerSecond">
       <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__left">
             <li class="nav-item ">
@@ -96,6 +96,37 @@
                 <img src="../assets/image/header/Bask.png" alt="">
               </a>
             </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar-expand-lg navbar__headerSecond">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__downHeader">
+            <li class="nav-item ">
+              <a class="nav-link active nav-link__secondHeader" href="#">Мебель</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link__secondHeader" href="#">Мебель, фурнитура и комплектующие</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link__secondHeader" href="#">Товары для дома</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link__secondHeader" href="#">Плитка, керамогранит и мозайка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link__secondHeader" href="#">Акции</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex mb-lg-0 list-unstyled">
+            <div class="input-group input-group-sm flex-nowrap input-group__search">
+              <input type="text" class="form-control input-group__searchInput" placeholder="Белый стул" aria-label="Username" aria-describedby="addon-wrapping">
+              <span class="input-group-text" id="addon-wrapping">
+                <img src="../assets/image/header/search.png" alt="">
+              </span>
+            </div>
           </ul>
         </div>
       </div>
