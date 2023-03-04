@@ -98,6 +98,17 @@
         </div>
       </div>
     </div>
+    <hr>
+    <div class="container">
+      <div class="row list-unstyled row__footerEnd">
+        <div class="col">
+          <li>&copy 2020 Alpina Market. All rights reserved <a class="nav-link__footerPolitics" href="#">Политика конфиденциальности</a></li>
+        </div>
+        <div class="col">
+          <p>Developed by Legacystudio</p>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
