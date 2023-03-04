@@ -17,9 +17,20 @@
     font-weight: 400;
     letter-spacing: 0.4px;
   }
+  &__url {
+    padding-right: 100px;
+  }
+  &__opinion {
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
-
 .nav-link{
+  &__footerIcon {
+    margin: 0 5px;
+  }
   &__title {
     font-size: 14px;
     line-height: 20px;
@@ -29,5 +40,18 @@
 .container {
   &__paddingFooter{
     padding-top: 14px;
+  }
+}
+.btn{
+  &__settings {
+    width: 150px;
+    height: 32px;
+    background-color: #fff;
+    transition-duration: 0.4s;
+    border: 1px solid #000;
+    border-radius: 3px;
+    &:hover {
+      background-color: #000;
+    }
   }
 }

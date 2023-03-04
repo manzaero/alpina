@@ -58,7 +58,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__left">
             <li class="nav-item ">
-              <a class="nav-link active nav-link__secondHeader" href="#">Каталог</a>
+              <a class="nav-link active nav-link__secondHeader" href="#"><b>Каталог</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link__secondHeader" href="#">Комнаты</a>
