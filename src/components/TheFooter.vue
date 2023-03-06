@@ -100,11 +100,14 @@
     </div>
     <hr>
     <div class="container">
-      <div class="row list-unstyled row__footerEnd">
-        <div class="col">
+      <div class="list-unstyled row__footerEnd">
+        <div class="col__footerWidth">
           <li>&copy 2020 Alpina Market. All rights reserved <a class="nav-link__footerPolitics" href="#">Политика конфиденциальности</a></li>
         </div>
-        <div class="col">
+        <div class="">
+
+        </div>
+        <div class="">
           <p>Developed by Legacystudio</p>
         </div>
       </div>
