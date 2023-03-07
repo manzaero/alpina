@@ -2,7 +2,7 @@
   <div class="container">
     <div class="drop-menu row">
       <div class="col col__drop-menu">
-        <ul class="list-unstyled">
+        <ul class="list-unstyled list-unstyled__padding">
           <li class="drop-menu__title"><strong>Столы и стулья</strong></li>
           <li>Столы и столики</li>
           <li>Стулья</li>
@@ -54,29 +54,9 @@
       </div>
       <div class="col">
         <ul class="list-unstyled">
-          <div class="drop-position">
-            <img src="../../assets/image/header/spalnya.png" alt="">
-            <button class="btn btn__drop-btn">Спальня</button>
-          </div>
-          <div class="drop-position">
-            <img src="../../assets/image/header/spalnya.png" alt="">
-            <button class="btn btn__drop-btn">Спальня</button>
-          </div>
-          <div class="drop-position">
-            <img src="../../assets/image/header/spalnya.png" alt="">
-            <button class="btn btn__drop-btn">Спальня</button>
-          </div>
-          <div class="drop-position">
-            <img src="../../assets/image/header/spalnya.png" alt="">
-            <button class="btn btn__drop-btn">Спальня</button>
-          </div>
-          <div class="drop-position">
-            <img src="../../assets/image/header/spalnya.png" alt="">
-            <button class="btn btn__drop-btn">Спальня</button>
-          </div>
-          <div class="drop-position">
-            <img src="../../assets/image/header/spalnya.png" alt="">
-            <button class="btn btn__drop-btn">Спальня</button>
+          <div class="drop-position" v-for="data in dropMenu" :key="data.id">
+            <img :src="require(`../../assets/image/header/${data.img}.png`)" alt="">
+            <button class="btn btn__drop-btn">{{ data.name }}</button>
           </div>
         </ul>
       </div>
@@ -85,7 +65,14 @@
 </template>
 
 <script>
+import {dropMenu} from "@/const/drop-menu";
+
 export default {
+  data(){
+    return {
+      dropMenu
+    }
+  },
   name: "TheDropdown"
 }
 </script>
