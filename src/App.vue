@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import TheHeader from "@/components/TheHeader";
+import TheHeader from "@/components/header/TheHeader";
 import TheMain from "@/components/TheMain";
 import TheFooter from "@/components/TheFooter";
 export default {
