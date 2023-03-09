@@ -4,52 +4,52 @@
       <div class="col col__drop-menu">
         <ul class="list-unstyled list-unstyled__padding">
           <li class="drop-menu__title"><strong>Столы и стулья</strong></li>
-          <li>Столы и столики</li>
-          <li>Стулья</li>
-          <li>Обеденные группы</li>
+          <li class="drop-menu__title">Столы и столики</li>
+          <li class="drop-menu__title">Стулья</li>
+          <li class="drop-menu__title">Обеденные группы</li>
         </ul>
       </div>
       <div class="col col__drop-menu">
         <ul class="list-unstyled">
           <li class="drop-menu__title"><strong>Мягкая мебель</strong></li>
-          <li>Диваны</li>
-          <li>Диван-кровать</li>
-          <li>Модульные диваны</li>
-          <li>Офисные диваны</li>
-          <li>Кресла</li>
-          <li>Банкетники</li>
-          <li>Пуфы</li>
+          <li class="drop-menu__title">Диваны</li>
+          <li class="drop-menu__title">Диван-кровать</li>
+          <li class="drop-menu__title">Модульные диваны</li>
+          <li class="drop-menu__title">Офисные диваны</li>
+          <li class="drop-menu__title">Кресла</li>
+          <li class="drop-menu__title">Банкетники</li>
+          <li class="drop-menu__title">Пуфы</li>
         </ul>
       </div>
       <div class="col col__drop-menu">
         <ul class="list-unstyled">
           <li class="drop-menu__title"><strong>Шкафы</strong></li>
-          <li>Платяные шкафы</li>
-          <li>Угловые шкафы</li>
-          <li>Шкафы-купе</li>
-          <li>Полки на стену</li>
-          <li>Стеллажи</li>
-          <li>Этажерки</li>
-          <li>Книжные шкафы</li>
+          <li class="drop-menu__title">Платяные шкафы</li>
+          <li class="drop-menu__title">Угловые шкафы</li>
+          <li class="drop-menu__title">Шкафы-купе</li>
+          <li class="drop-menu__title">Полки на стену</li>
+          <li class="drop-menu__title">Стеллажи</li>
+          <li class="drop-menu__title">Этажерки</li>
+          <li class="drop-menu__title">Книжные шкафы</li>
         </ul>
       </div>
       <div class="col col__drop-menu">
         <ul class="list-unstyled">
           <li class="drop-menu__title"><strong>Кухни</strong></li>
-          <li>Выставочные образцы кухонь</li>
-          <li>Готовые кухни</li>
-          <li>Модульные кухни</li>
-          <li>Кухни на заказ</li>
+          <li class="drop-menu__title">Выставочные образцы кухонь</li>
+          <li class="drop-menu__title">Готовые кухни</li>
+          <li class="drop-menu__title">Модульные кухни</li>
+          <li class="drop-menu__title">Кухни на заказ</li>
         </ul>
       </div>
       <div class="col col__drop-menu">
         <ul class="list-unstyled">
           <li class="drop-menu__title"><strong>Кровати и матрасы</strong></li>
-          <li>Кровати</li>
-          <li>Матрасы</li>
-          <li>Основания</li>
-          <li>Покрывала и наматрасники</li>
-          <li>Спальные гарнитуры</li>
+          <li class="drop-menu__title">Кровати</li>
+          <li class="drop-menu__title">Матрасы</li>
+          <li class="drop-menu__title">Основания</li>
+          <li class="drop-menu__title">Покрывала и наматрасники</li>
+          <li class="drop-menu__title">Спальные гарнитуры</li>
         </ul>
       </div>
       <div class="col">
@@ -77,6 +77,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

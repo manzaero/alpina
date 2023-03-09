@@ -1,14 +1,16 @@
 .container {
   &__drop {
-    padding-top: 30px;
+    margin: 60px 0 0 -70px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    color: #000000A6;
   }
 }
 
 .drop-menu {
   font-size: 14px;
-  background-color: #fff;
-  position: absolute;
-  z-index: 2;
+
   &__title {
     font-weight: 400;
     font-size: 16px;
@@ -44,11 +46,10 @@
   position: relative;
   padding-bottom: 8px;
 }
-ul li {
-  padding-bottom: 24px;
-}
+
+
 .slide-fade-enter-active {
-  transition: all 0.1s ease-out;
+  transition: all 0.10s ease-out;
 }
 
 .slide-fade-leave-active {
@@ -57,6 +58,5 @@ ul li {
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-  transform: translateX(20px);
-  opacity: 0;
+  opacity: 10;
 }
