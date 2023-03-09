@@ -107,7 +107,7 @@
         <div class="">
 
         </div>
-        <div class="">
+        <div class="col__contacts">
           <p>Developed by Legacystudio</p>
         </div>
       </div>
