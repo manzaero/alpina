@@ -1,12 +1,13 @@
 .container {
   &__drop {
     left: 0;
-    margin: 60px 0 0 8px;
+    padding-left: 32px;
+    margin: 60px 0 0 0;
     background-color: #fff;
     position: absolute;
     z-index: 10;
     color: #000000A6;
-    box-shadow: 0 20px 5px -5px rgba(0, 0, 0, .2);
+    box-shadow: 0 20px 25px 5px rgba(0, 0, 0, .05);
   }
 }
 
@@ -54,11 +55,11 @@
 
 
 .slide-fade-enter-active {
-  transition: all 0.10s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .slide-fade-leave-active {
-  transition: all 0.1s cubic-bezier(2, 0.5, 0.8, 1);
+  transition: all 0.5s cubic-bezier(2, 0.5, 0.8, 1);
 }
 
 .slide-fade-enter-from,

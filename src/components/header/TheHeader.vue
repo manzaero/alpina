@@ -107,7 +107,6 @@
             <li class="nav-item ">
               <a class="nav-link active nav-link__secondHeader " @click="show = !show" href="#">Мебель</a>
             </li>
-
             <transition name="slide-fade">
               <p v-if="show">
                 <the-dropdown/>

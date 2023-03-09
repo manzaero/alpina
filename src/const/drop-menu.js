@@ -3,7 +3,7 @@ export const dropMenu = [
         id: 1,
         name: 'Спальня',
         path:'/',
-        img: 'office'
+        img: 'spalnya'
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export const dropMenu = [
         id: 4,
         name: 'Прихожая',
         path:'/',
-        img: 'detskaya'
+        img: 'prixojajya'
     },
     {
         id: 5,

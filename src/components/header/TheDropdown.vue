@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid container__drop">
-    <div class="container">
+    <div class="container container__left">
       <div class="drop-menu row">
         <div class="col col__menu">
           <ul class="list-unstyled list-unstyled__padding">
