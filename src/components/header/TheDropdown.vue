@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container container__drop">
     <div class="drop-menu row">
       <div class="col col__drop-menu">
         <ul class="list-unstyled list-unstyled__padding">

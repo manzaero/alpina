@@ -1,6 +1,5 @@
 <template>
   <div class="navbar">
-    <the-dropdown/>
     <nav class="navbar-expand-lg navbar__header">
       <div class="container">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -106,8 +105,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__downHeader">
             <li class="nav-item ">
-              <a class="nav-link active nav-link__secondHeader" href="#">Мебель</a>
-
+              <a class="nav-link active nav-link__secondHeader " @click="show = !show" href="#">Мебель</a>
+              <transition name="slide-fade">
+                <p v-if="show">
+                  <the-dropdown/>
+                </p>
+              </transition>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link__secondHeader" href="#">Мебель, фурнитура и комплектующие</a>
@@ -139,6 +142,11 @@
 <script>
 import TheDropdown from "@/components/header/TheDropdown";
 export default {
+  data(){
+    return {
+      show: false
+    }
+  },
   name: "TheHeader",
   components: {TheDropdown}
 }

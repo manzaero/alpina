@@ -1,6 +1,14 @@
+.container {
+  &__drop {
+    padding-top: 30px;
+  }
+}
+
 .drop-menu {
   font-size: 14px;
-
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
   &__title {
     font-weight: 400;
     font-size: 16px;
@@ -38,4 +46,17 @@
 }
 ul li {
   padding-bottom: 24px;
+}
+.slide-fade-enter-active {
+  transition: all 0.1s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
 }
