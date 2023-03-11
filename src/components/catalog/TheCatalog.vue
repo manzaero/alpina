@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import TheCarousel from "@/components/title/TheCarousel";
+import TheCarousel from "@/components/catalog/TheCarousel";
 export default {
   name: "TheCatalog",
   components: {TheCarousel}

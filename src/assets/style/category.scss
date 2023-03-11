@@ -1,0 +1,10 @@
+.form {
+  position: relative;
+  background: #F6F6F6;
+  width: 250px;
+  height: 240px;
+  &__img {
+    position: absolute;
+    margin: 40px;
+  }
+}

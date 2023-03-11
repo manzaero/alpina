@@ -62,3 +62,35 @@ export const catalog = [
         img: 'zal'
     }
 ]
+export const category = [
+    {
+        id: 1,
+        name: 'Диван',
+        path:'/',
+        img: 'divan'
+    },
+    {
+        id: 2,
+        name: 'Кресло',
+        path:'/',
+        img: 'kreslo'
+    },
+    {
+        id: 3,
+        name: 'Кровать',
+        path:'/',
+        img: 'krovat'
+    },
+    {
+        id: 4,
+        name: 'shkaf',
+        path:'/',
+        img: 'Шкаф'
+    },
+    {
+        id: 5,
+        name: 'Стол',
+        path:'/',
+        img: 'stol'
+    }
+]
