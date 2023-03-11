@@ -67,12 +67,12 @@
 </template>
 
 <script>
-import {dropMenu} from "@/const/drop-menu";
+import {dataValue} from "@/const/data-value";
 
 export default {
   data(){
     return {
-      dropMenu
+      dropMenu: dataValue
     }
   },
   name: "TheDropdown"

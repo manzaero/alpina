@@ -1,6 +1,7 @@
 @import './color';
 
 .navbar {
+  padding: -12px !important;
   &__header{
     width: 1440px;
     margin: 0 auto;
