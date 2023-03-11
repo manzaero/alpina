@@ -2,7 +2,7 @@
   <div class="container-fluid container__drop">
     <div class="container container__left">
       <div class="drop-menu row">
-        <div class="col col__menu">
+        <div class="col col__drop-menu">
           <ul class="list-unstyled list-unstyled__padding">
             <li class="drop-menu__title"><strong>Столы и стулья</strong></li>
             <li class="drop-menu__title">Столы и столики</li>
@@ -53,7 +53,7 @@
             <li class="drop-menu__title">Спальные гарнитуры</li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col col__right">
           <ul class="list-unstyled">
             <div class="drop-position" v-for="data in dropMenu" :key="data.id">
               <img :src="require(`../../assets/image/header/${data.img}.png`)" alt="">

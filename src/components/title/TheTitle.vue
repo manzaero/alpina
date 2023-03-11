@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar container__title">
+  <div class="container container__title">
     <img src="../../assets/image/main/title.png" alt="">
   </div>
 </template>

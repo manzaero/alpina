@@ -1,21 +1,7 @@
-.row {
-  &__catalog {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  &__catalog-size {
-    margin: 20px 20px 0 -12px;
-    width: 324px;
-    height: 367px;
-  }
-  &__catalog-size p {
-    padding-top: 15px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
+.catalog {
+  margin-top: 64px;
 }
+
 .d-flex{
   &__catalog {
     font-weight: 400;
@@ -41,18 +27,21 @@
     color: black;
   }
 }
-.carousel-item {
-  &__size {
-    width: 324px;
-    height: 367px;
-  }
-}
-.carousel-inner {
-  &__row {
-  }
-}
 .carousel {
-  &__test {
-    background-color: #0ff;
+  &__width {
+    margin: 0 -12px;
+    width: 1320px;
+  }
+  &__item {
+    padding: 24px 0;
+    text-decoration: none;
+    color: #000000a6;
+  }
+  &__text {
+    padding-top: 15px;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

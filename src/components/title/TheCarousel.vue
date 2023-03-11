@@ -1,12 +1,12 @@
 <template>
-  <Carousel :autoplay="1000" :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
+  <Carousel class="carousel__width" :autoplay="5000" :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in slides" :key="slide">
-      <div class="carousel__item">
-        <img class="carousel__img" :src="require(`../../assets/image/main/catalog/${slide.img}.png`)" alt="slide.name">
-        <p class="carousel__text">test</p>
-      </div>
-    </Slide>
+      <a href="#" class="carousel__item">
+        <img :src="require(`../../assets/image/main/catalog/${slide.img}.png`)" alt="slide.name">
+        <p class="carousel__text">{{ slide.name }}</p>
+      </a>
 
+    </Slide>
     <template #addons>
       <Navigation />
     </template>
@@ -32,7 +32,8 @@ export default defineComponent({
     settings: {
       itemsToShow: 1,
       snapAlign: 'center',
-      transition:3000
+      transition:1000,
+      pauseAutoplayOnHover:true
     },
     breakpoints: {
       // 700px and up
@@ -50,13 +51,3 @@ export default defineComponent({
   }),
 })
 </script>
-
-<style lang="scss" scoped>
-.carousel {
-  &__img {
-  }
-  &__text {
-    text-align: start;
-  }
-}
-</style>

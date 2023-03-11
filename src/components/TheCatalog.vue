@@ -18,10 +18,5 @@ import TheCarousel from "@/components/title/TheCarousel";
 export default {
   name: "TheCatalog",
   components: {TheCarousel}
-
 }
 </script>
-
-<style scoped>
-
-</style>
