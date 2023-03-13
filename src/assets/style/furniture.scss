@@ -1,0 +1,35 @@
+.d-flex {
+  &__right {
+    margin: 62px 0 62px 0;
+  }
+}
+.col {
+  position: relative;
+  &__ignore{
+    position: absolute;
+    right: 0;
+  }
+  &__left {
+    width: 800px;
+    text-align: center;
+  }
+  &__left p:first-child {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.btn {
+  &__furniture {
+    width: 150px;
+    height: 32px;
+    background-color: #fff;
+    transition-duration: 0.4s;
+    border: 1px solid #000;
+    border-radius: 3px;
+    &:hover {
+      background-color: #000;
+      color: white;
+    }
+  }
+}

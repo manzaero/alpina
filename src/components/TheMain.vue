@@ -3,7 +3,7 @@
     <header>
       <slot name="header"></slot>
     </header>
-    <content class="flex-fill container-fluid p-0">
+    <content class="flex-fill container-fluid">
       <slot/>
     </content>
     <footer>
