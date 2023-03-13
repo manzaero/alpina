@@ -8,46 +8,46 @@
            <div class="d-flex__line"/>
          </a>
        </div>
-       <div class="d-flex list-unstyled">
+       <div class="d-flex d-flex__mt list-unstyled">
          <div class="col">
-           <li>
+           <a href="#">
              <div class="form">
               <img class="form__img" src="../assets/image/main/category/stul.png" alt="">
              </div>
-             <p>Стулья</p>  
-           </li>
+             <p class="text-params">Стулья</p>
+           </a>
          </div>
          <div class="col">
-           <li>
+           <a>
              <div class="form">
               <img class="form__img" src="../assets/image/main/category/stol.png" alt="">
              </div>
              <p>Стулья</p>
-           </li>
+           </a>
          </div>
          <div class="col">
-           <li>
+           <a>
              <div class="form">
-              <img class="form__img" src="../assets/image/main/category/shkaf.png" alt="">
+              <img class="form__img" src="../assets/image/main/category/krovat.png" alt="">
              </div>
              <p>Стулья</p>
-           </li>
+           </a>
          </div>
          <div class="col">
-           <li>
+           <a>
              <div class="form">
-              <img class="form__img" src="../assets/image/main/category/stul.png" alt="">
+              <img class="form__img" src="../assets/image/main/category/divan.png" alt="">
              </div>
              <p>Стулья</p>
-           </li>
+           </a>
          </div>
          <div class="col">
-           <li>
+           <a>
              <div class="form">
-              <img class="form__img" src="../assets/image/main/category/stul.png" alt="">
+              <img class="form__img" src="../assets/image/main/category/kreslo.png" alt="">
              </div>
              <p>Стулья</p>
-           </li>
+           </a>
          </div>
 
        </div>
