@@ -8,14 +8,20 @@
           <div class="d-flex__line"/>
         </a>
       </div>
-      <the-carousel/>
+      <the-carousel :catalog="catalog"/>
     </div>
   </div>
 </template>
 
 <script>
+import {catalog} from "@/const/data-value";
 import TheCarousel from "@/components/catalog/TheCarousel";
 export default {
+  data(){
+    return {
+      catalog
+    }
+  },
   name: "TheCatalog",
   components: {TheCarousel}
 }

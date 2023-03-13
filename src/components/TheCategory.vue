@@ -9,47 +9,14 @@
          </a>
        </div>
        <div class="d-flex d-flex__mt list-unstyled">
-         <div class="col">
-           <a href="#">
+         <div class="d-flex">
+           <a v-for="category in categories" :key="category.id">
              <div class="form">
-              <img class="form__img" src="../assets/image/main/category/stul.png" alt="">
+              <img class="form__img" :src="require(`../assets/image/main/category/${category.img}.png`)" alt="">
              </div>
-             <p class="text-params">Стулья</p>
+             <p class="text-params">{{ category.name }}</p>
            </a>
          </div>
-         <div class="col">
-           <a>
-             <div class="form">
-              <img class="form__img" src="../assets/image/main/category/stol.png" alt="">
-             </div>
-             <p>Стулья</p>
-           </a>
-         </div>
-         <div class="col">
-           <a>
-             <div class="form">
-              <img class="form__img" src="../assets/image/main/category/krovat.png" alt="">
-             </div>
-             <p>Стулья</p>
-           </a>
-         </div>
-         <div class="col">
-           <a>
-             <div class="form">
-              <img class="form__img" src="../assets/image/main/category/divan.png" alt="">
-             </div>
-             <p>Стулья</p>
-           </a>
-         </div>
-         <div class="col">
-           <a>
-             <div class="form">
-              <img class="form__img" src="../assets/image/main/category/kreslo.png" alt="">
-             </div>
-             <p>Стулья</p>
-           </a>
-         </div>
-
        </div>
      </div>
    </div>
@@ -57,6 +24,12 @@
 
 <script>
 export default {
+  props:{
+    categories:{
+      type: Array,
+      required: true
+    }
+  },
   name: "ThePopular"
 }
 </script>

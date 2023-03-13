@@ -62,7 +62,7 @@ export const catalog = [
         img: 'zal'
     }
 ]
-export const category = [
+export const catValue = [
     {
         id: 1,
         name: 'Диван',
@@ -83,14 +83,14 @@ export const category = [
     },
     {
         id: 4,
-        name: 'shkaf',
-        path:'/',
-        img: 'Шкаф'
-    },
-    {
-        id: 5,
         name: 'Стол',
         path:'/',
         img: 'stol'
+    },
+    {
+        id: 5,
+        name: 'Стул',
+        path:'/',
+        img: 'stul'
     }
 ]

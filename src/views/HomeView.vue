@@ -1,19 +1,25 @@
 <template>
   <the-title/>
   <the-catalog/>
-  <the-popular/>
+  <the-category :categories="categories"/>
 </template>
 
 <script>
-import ThePopular from "@/components/TheCategory";
+import TheCategory from "@/components/TheCategory";
 import TheTitle from "@/components/TheTitle";
 import TheCatalog from "@/components/catalog/TheCatalog";
+import {catValue} from "@/const/data-value";
 export default {
   name: 'HomeView',
+  data(){
+    return {
+      categories:catValue
+    }
+  },
   components: {
     TheCatalog,
     TheTitle,
-    ThePopular
+    TheCategory
   }
 }
 </script>

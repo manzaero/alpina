@@ -1,6 +1,6 @@
 <template>
   <Carousel class="carousel__width" :autoplay="5000" :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
-    <Slide v-for="slide in slides" :key="slide">
+    <Slide v-for="slide in catalog" :key="slide">
       <a href="#" class="carousel__item">
         <img :src="require(`../../assets/image/main/catalog/${slide.img}.png`)" alt="slide.name">
         <p class="carousel__text">{{ slide.name }}</p>
@@ -16,19 +16,16 @@
 <script>
 import { defineComponent } from 'vue'
 import { Carousel, Navigation, Slide } from 'vue3-carousel'
-import {catalog} from "@/const/data-value";
-
 import 'vue3-carousel/dist/carousel.css'
 
 export default defineComponent({
-  name: 'Breakpoints',
-  components: {
-    Carousel,
-    Slide,
-    Navigation,
+  props:{
+    catalog:{
+      type: Array,
+      required: true
+    }
   },
   data: () => ({
-    slides: catalog,
     settings: {
       itemsToShow: 1,
       snapAlign: 'center',
@@ -49,5 +46,11 @@ export default defineComponent({
       },
     },
   }),
+  name: 'Breakpoints',
+  components: {
+    Carousel,
+    Slide,
+    Navigation,
+  }
 })
 </script>
