@@ -8,9 +8,20 @@
       </a>
     </div>
     <div class="row row-cols-4">
-      <div class="col">
-        <div class="img">1</div>
-        <p>Декоративный куст, с шикарными листьями, горшком</p>
+      <div class="col offers">
+        <button class="offers__btn">Распродажа</button>
+
+        <div href="#" class="offers__img">
+          <img src="../assets/image/main/offer/kreslo.png" alt="">
+        </div>
+        <div class="d-flex offers__info">
+          <div class="col">
+            <a href="#" class="offers__title">Декоративный куст, с шикарными листьями, горшком</a>
+          </div>
+          <div class="col-md-auto">
+            <span>2 000 руб.</span>
+          </div>
+        </div>
         <span>120 × 212  × 46 </span>
       </div>
       <div class="col">Column</div>
