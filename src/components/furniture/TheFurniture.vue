@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <div class="d-flex d-flex__right">
-      <div class="col__left">
-        <p class="">
+      <div class="col-left">
+        <p class="col-left__title">
           Мебель для ресторанов <br> гостиниц, или офиса
         </p>
-        <p class="">
+        <p class="col-left__text">
           Мы стремимся к европейскому качеству, поэтому используем фасады <br>
           и элементы декора, созданные итальянскими дизайнерами
         </p>
