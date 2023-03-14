@@ -1,7 +1,7 @@
 .d-flex {
   &__right {
     height: 300px;
-    margin: 62px 0 62px 0;
+    margin: 38px 0 62px 0;
   }
 }
 .col {
@@ -28,10 +28,11 @@
   }
 }
 .col-left {
+  margin-top: 24px;
   width: 750px;
   text-align: center;
   &__title {
-    margin-top: 24px;
+    margin-top: 30px;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
