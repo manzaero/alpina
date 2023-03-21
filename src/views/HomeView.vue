@@ -4,6 +4,7 @@
   <the-category :categories="categories"/>
   <the-furniture/>
   <the-offer/>
+  <the-collection/>
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import TheTitle from "@/components/TheTitle";
 import TheCatalog from "@/components/catalog/TheCatalog";
 import TheFurniture from "@/components/furniture/TheFurniture";
 import TheOffer from "@/components/TheOffer";
+import TheCollection from "@/components/TheCollection";
 import {catValue} from "@/const/data-value";
 export default {
   name: 'HomeView',
@@ -25,7 +27,8 @@ export default {
     TheCatalog,
     TheTitle,
     TheCategory,
-    TheOffer
+    TheOffer,
+    TheCollection
   }
 }
 </script>
