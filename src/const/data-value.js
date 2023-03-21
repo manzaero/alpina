@@ -229,3 +229,27 @@ export const offers = [
         cart: ''
     }
 ]
+export const collection = [
+    {
+        id: 1,
+        img: 'spa',
+        icon1: 'bush',
+        icon2: 'chair',
+        icon3: 'none',
+        icon4: 'pen',
+        more: '5',
+        name: 'Блестящая коллекция Maracesh',
+        price:'2300'
+    },
+    {
+        id: 2,
+        img: 'kom',
+        icon1: 'bush',
+        icon2: 'chair',
+        icon3: 'none',
+        icon4: 'pen',
+        more: '5',
+        name: 'Блестящая коллекция Gabriella',
+        price:'3100'
+    }
+]

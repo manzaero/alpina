@@ -1,0 +1,54 @@
+@import './color';
+.container-collection {
+  width: 1320px;
+  margin: 32px 0 0 -12px;
+}
+.col-collection {
+  margin-right: 16px;
+  &__main {
+    margin-top: 58px;
+  }
+  &__img p {
+    margin-top: 30px;
+    text-decoration: none;
+  }
+  &__img {
+    width: 95px;
+    height: 92px;
+    transition: background-color 1s;
+    margin: 16px 16px 16px 0;
+    border: 1px solid $lightgray;
+    &:last-child{
+      text-align: center;
+      border: 1px solid $lightgray;
+      &:hover {
+        border: 1px solid $black;
+        transition: 1s;
+      }
+    }
+    &:hover{
+      background-color: $lightgray;
+      cursor: pointer;
+      border: 1px solid $black;
+      transition: 1s;
+    }
+  }
+  &__text {
+    margin-top: 16px;
+    li:first-child {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    li:last-child {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+    }
+  }
+}
+.col-collection a {
+  text-decoration: none;
+  color: $black;
+}

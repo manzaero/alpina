@@ -4,7 +4,7 @@
   <the-category :categories="categories"/>
   <the-furniture/>
   <the-offer/>
-  <the-collection/>
+  <the-collection :theCollection="theCollection" :icons="icons"/>
 </template>
 
 <script>
@@ -15,11 +15,15 @@ import TheFurniture from "@/components/furniture/TheFurniture";
 import TheOffer from "@/components/TheOffer";
 import TheCollection from "@/components/TheCollection";
 import {catValue} from "@/const/data-value";
+import {collection} from "@/const/data-value";
+import {iconsCollection} from "@/const/data-value";
 export default {
   name: 'HomeView',
   data(){
     return {
-      categories:catValue
+      categories:catValue,
+      theCollection: collection,
+      icons: iconsCollection
     }
   },
   components: {
