@@ -4,7 +4,8 @@
   <the-category :categories="categories"/>
   <the-furniture/>
   <the-offer/>
-  <the-collection :theCollection="theCollection" :icons="icons"/>
+  <the-collection :theCollection="theCollection"/>
+  <the-production />
 </template>
 
 <script>
@@ -14,16 +15,15 @@ import TheCatalog from "@/components/catalog/TheCatalog";
 import TheFurniture from "@/components/furniture/TheFurniture";
 import TheOffer from "@/components/TheOffer";
 import TheCollection from "@/components/TheCollection";
-import {catValue} from "@/const/data-value";
-import {collection} from "@/const/data-value";
-import {iconsCollection} from "@/const/data-value";
+import TheProduction from "@/components/production/TheProduction";
+import {catValue, collection, production} from "@/const/data-value";
 export default {
+  provide:{production},
   name: 'HomeView',
   data(){
     return {
       categories:catValue,
-      theCollection: collection,
-      icons: iconsCollection
+      theCollection: collection
     }
   },
   components: {
@@ -32,7 +32,8 @@ export default {
     TheTitle,
     TheCategory,
     TheOffer,
-    TheCollection
+    TheCollection,
+    TheProduction
   }
 }
 </script>

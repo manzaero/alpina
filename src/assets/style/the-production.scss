@@ -1,0 +1,48 @@
+@import './color';
+
+.production {
+  &__slide{
+    right: 0;
+    padding-left: 33%;
+  }
+  &__position{
+    position: relative;
+    margin: 64px auto 26px;
+    width: 680px;
+    height: 110px;
+  }
+  &__position .title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__position .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  &__about {
+    margin-top: 32px;
+    text-align: center;
+  }
+  &__about .title p {
+    color: $black;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  &__about a {
+    text-decoration: none;
+  }
+  &__border {
+    margin: 0 auto;
+    width: 100px;
+    border-bottom: 1px solid $black;
+  }
+}

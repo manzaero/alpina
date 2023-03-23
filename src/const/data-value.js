@@ -244,12 +244,24 @@ export const collection = [
     {
         id: 2,
         img: 'kom',
-        icon1: 'bush',
-        icon2: 'chair',
-        icon3: 'none',
-        icon4: 'pen',
+        icon1: 'pen',
+        icon2: 'none',
+        icon3: 'chair',
+        icon4: 'bush',
         more: '5',
         name: 'Блестящая коллекция Gabriella',
         price:'3100'
+    }
+]
+export const production = [
+    {
+        id:1,
+        name: 'Тумбочка',
+        img:'tumba'
+    },
+    {
+        id:2,
+        name: 'О нас',
+        img:'job'
     }
 ]
