@@ -9,9 +9,9 @@
     width: 316px;
     height: 320px;
     background: #f6f6f6;
+    transition: background-color 1s;
     &:hover {
       background-color: #eaeaea;
-      transition: 1s;
     }
   }
   &__hover {

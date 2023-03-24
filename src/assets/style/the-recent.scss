@@ -1,0 +1,37 @@
+@import './color';
+.recent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.recent-col {
+  display: flex;
+  width: 333px;
+  height: 96px;
+  margin: 32px 0 0 0;
+  &__img {
+    margin-right: 16px;
+    width: 100px;
+    height: 96px;
+    background-color: $lightgray;
+    transition: background-color 1s;
+    &:hover {
+      background-color: $gray;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: $black;
+  }
+  &__title p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  &__title a {
+    text-decoration: none;
+  }
+}

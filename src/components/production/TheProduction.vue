@@ -25,7 +25,3 @@ export default {
   components: {TheSlideProd}
 }
 </script>
-
-<style scoped>
-
-</style>

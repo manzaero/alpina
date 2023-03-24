@@ -6,6 +6,7 @@
   <the-offer/>
   <the-collection :theCollection="theCollection"/>
   <the-production />
+  <the-recent :theRecent="theRecent"/>
 </template>
 
 <script>
@@ -16,14 +17,16 @@ import TheFurniture from "@/components/furniture/TheFurniture";
 import TheOffer from "@/components/TheOffer";
 import TheCollection from "@/components/TheCollection";
 import TheProduction from "@/components/production/TheProduction";
-import {catValue, collection, production} from "@/const/data-value";
+import TheRecent from "@/components/TheRecent";
+import {catValue, collection, production, recent} from "@/const/data-value";
 export default {
   provide:{production},
   name: 'HomeView',
   data(){
     return {
       categories:catValue,
-      theCollection: collection
+      theCollection: collection,
+      theRecent: recent
     }
   },
   components: {
@@ -33,7 +36,8 @@ export default {
     TheCategory,
     TheOffer,
     TheCollection,
-    TheProduction
+    TheProduction,
+    TheRecent
   }
 }
 </script>
