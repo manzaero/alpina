@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer ">
+  <footer class="footer">
     <hr>
     <div class="container  container__paddingFooter">
       <div class="row">
@@ -32,7 +32,7 @@
         <div class="col">
           <ul class="list-unstyled">
             <li class="col__header">
-              <a class="nav-link" href="">Контакты</a>
+              <router-link to="/contact" class="nav-link">Контакты</router-link>
             </li>
             <li>
               <div class="col__contacts">

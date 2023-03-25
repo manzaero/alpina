@@ -3,9 +3,9 @@
     <template v-slot:header>
       <the-header/>
     </template>
-      <router-view/>
+<!--      <router-view/>-->
     <template v-slot:footer>
-      <the-footer/>
+<!--      <the-footer/>-->
     </template>
   </the-main>
 </template>

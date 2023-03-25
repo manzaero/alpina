@@ -1,0 +1,54 @@
+@import './color';
+
+.about {
+  &__slide {
+    margin-left: 25%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  &__title {
+    margin: 24px 0 64px;
+    width: 1296px;
+    text-align: center;
+  }
+  &__title p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+  }
+  &__col {
+    margin: 32px auto 0;
+    width: 1182px;
+    height: 110px;
+  }
+  &__col .col {
+    text-align: center;
+  }
+  &__col .bold{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
+  &__col .text {
+    margin: 16px auto 0;
+    width: 160px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &__img {
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__description {
+    width: 730px;
+    margin: 64px auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
