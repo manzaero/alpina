@@ -45,3 +45,42 @@
     line-height: 24px;
   }
 }
+@media (max-width: $hd){
+  .catalog{
+    margin-top: 32px;
+  }
+  .carousel {
+    &__width {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: $lg){
+  .carousel {
+    margin: 0 auto;
+    &__width {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: $mdx){
+  .carousel {
+    margin: 0 auto;
+    &__width {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: $md){
+  .carousel {
+    margin: 0 auto;
+    &__width {
+      width: 100%;
+    }
+  }
+  .d-flex {
+    &__all {
+      display: none;
+    }
+  }
+}

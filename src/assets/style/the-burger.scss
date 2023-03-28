@@ -1,3 +1,4 @@
+
 #menu__toggle {
   opacity: 0;
 }
@@ -16,6 +17,7 @@
   left: 0 !important;
 }
 .menu__btn {
+  margin-top: 5px;
   position: fixed;
   width: 26px;
   height: 26px;
@@ -27,10 +29,10 @@
 .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 26px;
   height: 2px;
-  background-color: #616161;
-  transition-duration: .25s;
+  background-color: $black;
+  transition-duration: .50s;
 }
 .menu__btn > span::before {
   content: '';
@@ -40,31 +42,99 @@
   content: '';
   top: 8px;
 }
+.menu-box {
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .menu__box {
   display: block;
   position: fixed;
   top: 0;
   z-index: 3;
   left: -100%;
-  width: 300px;
+  width: 100%;
   height: 100%;
-  margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #ECEFF1;
+  background-color: $white;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-  transition-duration: .25s;
+  transition-duration: .50s;
+  &__catalog {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.hamburger-menu ul li:first-child {
+  margin-top: 20px;
+}
+.menu__icon {
+  margin: 4px 0 0 16px;
+}
+.menu__flex {
+  display: flex;
+
+}
+.menu__flex span {
+  text-transform: none;
+}
+.hamburger-menu ul hr {
+  margin: 16px auto;
 }
 .menu__item {
+  display: flex;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__name {
+  width: 200px;
+  padding: 16px 0 0 14px;
+}
+.menu__contacts {
   display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  letter-spacing: 0.75px;
   text-decoration: none;
   transition-duration: .25s;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
+  color: $white;
+  background-color: $black;
+}
+@media (max-width: 767px){
+  .menu__catalog {
+    display: none;
+  }
+}
+@media (max-width: 420px){
+  .menu-box {
+    &__room {
+      display: none;
+    }
+    &__main {
+      margin-left: -190px;
+    }
+  }
+}
+
+@media (max-width: 320px){
+  .menu-box {
+
+    &__main {
+      margin-left: -120px;
+    }
+  }
 }

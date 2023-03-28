@@ -26,6 +26,10 @@
         <div class="navbar-contact__burger">
           <the-burger/>
         </div>
+        <a href="#" class="navbar-contact__burger-position">
+          <img src="../../assets/image/header/Chats.png" alt="">
+          <img class="navbar-contact__burger-frame" src="../../assets/image/header/Frame.png" alt="">
+        </a>
         <div class="navbar-contact__catalog">
           <a href="#">Каталог</a>
         </div>

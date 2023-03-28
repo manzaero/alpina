@@ -33,17 +33,33 @@ export default defineComponent({
       pauseAutoplayOnHover:true
     },
     breakpoints: {
-      // 700px and up
-      700: {
-        itemsToShow: 1,
+      539: {
+        itemsToShow: 1.5,
         snapAlign: 'center',
       },
-      // 1024 and up
-      1024: {
-        itemsToShow: 4,
+      767: {
+        itemsToShow: 2,
+        snapAlign: 'center',
+      },
+      991: {
+        itemsToShow: 2.5,
+        snapAlign: 'center',
+      },
+      1200: {
+        itemsToShow: 3,
         snapAlign: 'start',
         itemsToScroll:2
       },
+      1399: {
+        itemsToShow: 3,
+        snapAlign: 'start',
+        itemsToScroll:2
+      },
+      1400: {
+        itemsToShow: 4,
+        snapAlign: 'start',
+        itemsToScroll:2
+      }
     },
   }),
   name: 'Breakpoints',

@@ -1,4 +1,5 @@
 @import './color';
+@import './the-adaptive';
 .navbar-contact {
   display: flex;
   &__burger {
@@ -63,7 +64,9 @@
   &__position {
     position: relative;
   }
-
+  &__burger-position {
+    display: none;
+  }
   &__frame {
     position: absolute;
     bottom: 4px;
@@ -109,7 +112,7 @@
     right: 8px;
   }
 }
-@media (max-width: 1200px){
+@media (max-width: $lgx){
 .navbar-contact {
   &__burger {
     display: block;
@@ -145,10 +148,76 @@
   }
 }
 }
-@media (max-width: 991px){
+@media (max-width: $hd) {
+  .navbar-contact{
+    &__write {
+      padding-left: 160px;
+    }
+  }
+}
+@media (max-width: $lgx) {
+  .navbar-contact {
+    &__write{
+      padding-left: 0px;
+    }
+  }
+}
+@media (max-width: $lg){
   .navbar-contact {
     &__img {
       padding-left: 285px;
+    }
+  }
+}
+@media (max-width: $mdx) {
+  .navbar-contact {
+    &__user {
+      display: none;
+    }
+    &__img {
+      padding-left: 140px;
+    }
+    &__position {
+      display: none;
+    }
+    &__burger-position {
+      position: relative;
+      display: block;
+      padding-left: 30px;
+      top: 8px;
+      left: 20px;
+    }
+    &__burger-frame {
+      position: absolute;
+      margin-left: -10px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .navbar-contact{
+    &__img {
+    padding-left: 100px;
+    }
+  }
+}
+@media (max-width: $xsx){
+  .navbar-contact{
+    margin-left: -70px;
+    &__city {
+      display: none;
+    }
+    &__market {
+      margin-left: -12px;
+    }
+  }
+}
+@media (max-width: $xsx) {
+  .navbar-contact{
+    &__img {
+      width: 64px;
+      height: 28px;
+      padding-left: 50px;
     }
   }
 }
@@ -161,12 +230,12 @@ i {
   border: solid black;
   border-width: 0 1px 1px 0;
   display: inline-block;
-  padding: 1px;
+  padding: 2px;
 }
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 .arrow {
-  margin: 0 0 2px 7px;
+  margin: 0 0 3px 7px;
 }

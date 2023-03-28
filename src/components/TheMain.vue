@@ -13,7 +13,9 @@
 </template>
 
 <script>
+import {header} from "@/const/data-value";
 export default {
+  provide: {header},
   name: "TheMain"
 }
 </script>
