@@ -1,7 +1,7 @@
 <template>
   <the-title/>
   <the-catalog/>
-<!--  <the-category :categories="categories"/>-->
+  <the-category :categories="categories"/>
 <!--  <the-furniture/>-->
 <!--  <the-offer/>-->
 <!--  <the-collection :theCollection="theCollection"/>-->

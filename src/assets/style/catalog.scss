@@ -3,6 +3,9 @@
 }
 
 .d-flex{
+  &__flex-all{
+    display: none;
+  }
   &__catalog {
     font-weight: 400;
     font-size: 24px;
@@ -73,6 +76,10 @@
 }
 @media (max-width: $md){
   .carousel {
+
+    &__img {
+      width: 100%;
+    }
     margin: 0 auto;
     &__width {
       width: 100%;
@@ -82,5 +89,18 @@
     &__all {
       display: none;
     }
+    &__flex-all{
+      display: block;
+      margin-top: -20px;
+    }
+    &__flex-all p {
+      margin-top: -25px;
+    }
+    &__flex-all div {
+      border-bottom: 1px solid #000000;
+      width: 115px;
+      margin: -15px auto 10px;
+    }
   }
+
 }

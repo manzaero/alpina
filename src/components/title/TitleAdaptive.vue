@@ -11,7 +11,7 @@
         <img src="../../assets/image/header/right.png" alt="">
         <div class="container-title__content">
           <p>классический</p>
-          <button class="container-title__button">подробнее</button>
+          <button class="btn container-title__button">подробнее</button>
         </div>
       </div>
     </div>

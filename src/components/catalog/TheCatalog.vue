@@ -9,6 +9,10 @@
         </a>
       </div>
       <the-carousel :catalog="catalog"/>
+      <a href="#" class="d-flex__flex-all">
+        <p class="d-flex__products">Все комнаты</p>
+        <div class=""/>
+      </a>
     </div>
   </div>
 </template>
