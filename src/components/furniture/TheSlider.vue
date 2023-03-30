@@ -35,17 +35,21 @@ export default defineComponent({
       transition:1000,
       pauseAutoplayOnHover:true
     },
-    // breakpoints are mobile first
-    // any settings not specified will fallback to the carousel settings
     breakpoints: {
-      // 700px and up
+      319: {
+        itemsToShow: 0.5,
+        snapAlign: 'center',
+      },
       700: {
         itemsToShow: 2,
         snapAlign: 'center',
       },
-      // 1024 and up
       1024: {
-        itemsToShow: 2.4,
+        itemsToShow: 3,
+        snapAlign: 'start',
+      },
+      1399: {
+        itemsToShow: 2.3,
         snapAlign: 'start',
       },
     },

@@ -147,4 +147,42 @@
     }
   }
 }
+@media (max-width: $hd){
+  .offer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: $xsx){
+  .offer {
+    margin-bottom: 10px;
+  }
+  .offers {
+    width: 314px;
+    height: 450px;
+    position: relative;
+    padding: 0;
+    margin: 24px 0px 34px 0;
+    &__btn-in-cart {
+      margin-right: -5px;
+    }
+  }
+}
 
+@media (max-width: $xs){
+  .offer {
+
+    margin-bottom: 10px;
+  }
+  .offers {
+    width: 314px;
+    height: 450px;
+    position: relative;
+    padding: 0;
+    margin: 34px 0px 24px 0;
+    &__btn-in-cart {
+      margin-right: -44px;
+    }
+  }
+}

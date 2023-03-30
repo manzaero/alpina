@@ -7,7 +7,7 @@
         <div class="d-flex__line"/>
       </a>
     </div>
-    <div class="row row-cols-4">
+    <div class="row row-cols-4 offer">
       <div class="col offers" v-for="item in offers" :key="item.id">
         <button class="offers__btn">{{ item.sale }}</button>
         <a href="#" class="offers__hover">
@@ -15,7 +15,7 @@
         </a>
         <div href="#" class="offers__img">
           <a href="#">
-            <img :src="require(`../assets/image/main/offer/${item.img}.png`)" alt="">
+            <img class="offer__img-main" :src="require(`../assets/image/main/offer/${item.img}.png`)" alt="">
           </a>
         </div>
         <div class="d-flex offers__info">

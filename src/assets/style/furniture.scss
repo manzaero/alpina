@@ -1,19 +1,8 @@
-.d-flex {
-  &__right {
-    height: 300px;
-    margin: 38px 0 62px 0;
+.furniture {
+  &__main {
+    display: flex;
   }
-}
-.col {
-  position: relative;
-  &__ignore{
-    position: absolute;
-    right: 0;
-    width: 850px;
-  }
-}
-.btn {
-  &__furniture {
+  &__btn {
     margin-top: 40px;
     width: 150px;
     height: 32px;
@@ -26,11 +15,9 @@
       color: white;
     }
   }
-}
-.col-left {
-  margin-top: 24px;
-  width: 750px;
-  text-align: center;
+  &__left {
+    text-align: center;
+  }
   &__title {
     margin-top: 30px;
     font-weight: 400;
@@ -42,5 +29,24 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+  }
+  &__slider {
+    width: 800px;
+    margin-right: -12px;
+  }
+}
+@media (max-width: $hd){
+  .furniture {
+    &__main {
+      display: flex;
+      flex-direction: column;
+    }
+    &__slider {
+      margin: 0 auto;
+      width: 100%;
+    }
+    &__left {
+      margin: 64px 0 32px 0;
+    }
   }
 }

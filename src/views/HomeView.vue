@@ -2,9 +2,9 @@
   <the-title/>
   <the-catalog/>
   <the-category :categories="categories"/>
-<!--  <the-furniture/>-->
-<!--  <the-offer/>-->
-<!--  <the-collection :theCollection="theCollection"/>-->
+  <the-furniture/>
+  <the-offer/>
+  <the-collection :theCollection="theCollection"/>
 <!--  <the-production />-->
 <!--  <the-recent :theRecent="theRecent"/>-->
 </template>

@@ -1,19 +1,19 @@
 <template>
-  <div class="container">
-    <div class="d-flex d-flex__right">
-      <div class="col-left">
-        <p class="col-left__title">
+  <div class="furniture__main">
+    <div class="container furniture">
+      <div class="furniture__left">
+        <p class="furniture__title">
           Мебель для ресторанов <br> гостиниц, или офиса
         </p>
-        <p class="col-left__text">
+        <p class="furniture__text">
           Мы стремимся к европейскому качеству, поэтому используем фасады <br>
           и элементы декора, созданные итальянскими дизайнерами
         </p>
-        <button class="btn__furniture">Подробнее</button>
+        <button class="furniture__btn">Подробнее</button>
       </div>
-      <div class="col__ignore">
-        <the-slider />
-      </div>
+    </div>
+    <div class="furniture__slider">
+      <the-slider/>
     </div>
   </div>
 </template>

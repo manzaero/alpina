@@ -1,5 +1,5 @@
 <template>
-  <div class="container col-collection__main">
+  <div class="container container-collection__main">
     <div class="d-flex justify-content-between">
       <div class="d-flex__catalog">Коллекции плитки</div>
       <a href="#" class="d-flex__all">
@@ -8,29 +8,51 @@
       </a>
     </div>
     <div class="container-collection">
-      <div class="d-flex d-flex__collection">
-        <div class="col col-collection list-unstyled" v-for="collect in theCollection" :key="collect.id">
-          <img :src="require(`../assets/image/main/collection/${collect.img}.png`)" alt="">
-          <div class="d-flex">
-            <a class="col-collection__img">
-              <img :src="require(`../assets/image/main/collection/${collect.icon1}.png`)" alt="">
-            </a>
-            <a class="col-collection__img">
-              <img :src="require(`../assets/image/main/collection/${collect.icon2}.png`)" alt="">
-            </a>
-            <a class="col-collection__img">
-              <img :src="require(`../assets/image/main/collection/${collect.icon3}.png`)" alt="">
-            </a>
-            <a class="col-collection__img">
-              <img :src="require(`../assets/image/main/collection/${collect.icon4}.png`)" alt="">
-            </a>
-            <a href="#" class="col-collection__img">
-              <p>+ 5</p>
-            </a>
+      <div class="container-collection__img-container">
+        <img src="../assets/image/main/collection/spa.png" alt="" class="container-collection__img">
+        <div class="container-collection__box">
+          <div class="container-collection__box-icon">
+            <img class="container-collection__icon" src="../assets/image/main/collection/bush.png" alt="">
+            <img class="container-collection__icon" src="../assets/image/main/collection/chair.png" alt="">
+            <img class="container-collection__icon" src="../assets/image/main/collection/none.png" alt="">
+            <img class="container-collection__icon" src="../assets/image/main/collection/pen.png" alt="">
           </div>
-          <div class="d-flex justify-content-between list-unstyled col-collection__text">
-            <li>{{ collect.name }}</li>
-            <li>от {{ collect.price }} руб./м2</li>
+          <div class="container-collection__more">
+            <div class="container-collection__p">
+              + 5
+            </div>
+          </div>
+        </div>
+        <div class="container-collection__brand-price">
+          <div class="container-collection__brand">
+            <p>Блестящая коллекция Maracesh</p>
+          </div>
+          <div class="container-collection__price">
+            <p>от 2000 руб./м2</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-collection__img-container">
+        <img src="../assets/image/main/collection/spa.png" alt="" class="container-collection__img">
+        <div class="container-collection__box">
+          <div>
+            <img class="container-collection__icon" src="../assets/image/main/collection/bush.png" alt="">
+            <img class="container-collection__icon" src="../assets/image/main/collection/chair.png" alt="">
+            <img class="container-collection__icon" src="../assets/image/main/collection/none.png" alt="">
+            <img class="container-collection__icon" src="../assets/image/main/collection/pen.png" alt="">
+          </div>
+          <div class="container-collection__more">
+            <div class="container-collection__p">
+              + 5
+            </div>
+          </div>
+        </div>
+        <div class="container-collection__brand-price">
+          <div class="container-collection__brand">
+            <p>Блестящая коллекция Maracesh</p>
+          </div>
+          <div class="container-collection__price">
+            <p>от 2000 руб./м2</p>
           </div>
         </div>
       </div>
