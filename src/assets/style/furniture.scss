@@ -2,6 +2,8 @@
   &__main {
     display: flex;
   }
+  &__carousel {
+  }
   &__btn {
     margin-top: 40px;
     width: 150px;
@@ -32,7 +34,7 @@
   }
   &__slider {
     width: 800px;
-    margin-right: -12px;
+    margin-right: 0px;
   }
 }
 @media (max-width: $hd){

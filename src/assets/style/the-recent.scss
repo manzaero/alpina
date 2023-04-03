@@ -1,18 +1,21 @@
 @import './color';
-.recent {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .recent-col {
   display: flex;
-  width: 333px;
-  height: 96px;
+  justify-content: space-between;
   margin: 32px 0 0 0;
-  &__img {
+  &__main {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  &__img-container {
+
     margin-right: 16px;
-    width: 100px;
-    height: 96px;
+    width: auto;
+    height: 100%;
     background-color: $lightgray;
     transition: background-color 1s;
     &:hover {
@@ -33,5 +36,38 @@
   }
   &__title a {
     text-decoration: none;
+  }
+}
+@media (max-width: $lg){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: $mdx){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: $xsx){
+  .recent-col {
+    &__main:last-child {
+      display: none;
+    }
+    &__main:first-child {
+      display: none;
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: $xs){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }

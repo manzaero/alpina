@@ -239,7 +239,7 @@ export const collection = [
         icon4: 'pen',
         more: '5',
         name: 'Блестящая коллекция Maracesh',
-        price:'2300'
+        price:'2 300'
     },
     {
         id: 2,
@@ -250,7 +250,7 @@ export const collection = [
         icon4: 'bush',
         more: '5',
         name: 'Блестящая коллекция Gabriella',
-        price:'3100'
+        price:'3 100'
     }
 ]
 export const production = [

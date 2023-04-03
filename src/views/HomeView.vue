@@ -5,8 +5,8 @@
   <the-furniture/>
   <the-offer/>
   <the-collection :theCollection="theCollection"/>
-<!--  <the-production />-->
-<!--  <the-recent :theRecent="theRecent"/>-->
+  <the-production />
+  <the-recent :theRecent="theRecent"/>
 </template>
 
 <script>

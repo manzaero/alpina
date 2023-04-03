@@ -1,10 +1,9 @@
 <template>
-  <Carousel class="carousel__width" :autoplay="5000" :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
+  <Carousel class="carousel__width" :autoplay="4000" :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in production" :key="slide">
       <a href="#" class="">
-         <img :src="require(`../../assets/image/main/production/${slide.img}.png`)">
+         <img class="production__slide-img" :src="require(`../../assets/image/main/production/${slide.img}.png`)">
       </a>
-
     </Slide>
     <template #addons>
       <navigation />
@@ -26,14 +25,28 @@ export default defineComponent({
       pauseAutoplayOnHover:true
     },
     breakpoints: {
-      // 700px and up
-      700: {
+      320: {
+        itemsToShow: 1.4,
+        snapAlign: 'left',
+      },
+      767: {
         itemsToShow: 1,
         snapAlign: 'center',
       },
-      // 1024 and up
-      1024: {
-        itemsToShow: 2,
+      991: {
+        itemsToShow: 1.2,
+        snapAlign: 'left',
+      },
+      1130: {
+        itemsToShow: 1.2,
+        snapAlign: 'left',
+      },
+      1400: {
+        itemsToShow: 1.5,
+        snapAlign: 'center',
+      },
+      1800: {
+        itemsToShow: 1.9,
         snapAlign: 'start',
         itemsToScroll:1
       },

@@ -1,5 +1,5 @@
 <template>
-  <Carousel :settings="settings" :breakpoints="breakpoints" :items-to-show="3" :autoplay="3000" :wrap-around="true">
+  <Carousel class="furniture__carousel" :settings="settings" :breakpoints="breakpoints" :items-to-show="3" :autoplay="0" :wrap-around="true">
     <Slide v-for="slide in slides" :key="slide">
       <a href="#" class="carousel__item">
         <img :src="require(`../../assets/image/main/furniture/${slide.img}.png`)" alt="">
@@ -45,7 +45,7 @@ export default defineComponent({
         snapAlign: 'center',
       },
       1024: {
-        itemsToShow: 3,
+        itemsToShow: 3.3,
         snapAlign: 'start',
       },
       1399: {

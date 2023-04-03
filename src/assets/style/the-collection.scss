@@ -100,13 +100,48 @@
 @media (max-width: $mdx){
   .container-collection {
     &__box {
-      display: block;
     }
-    &__box-icon img:last-child {
+    &__icon {
+      margin: 6px 6px 6px 0;
+    }
+    &__icon:last-child{
       display: none;
     }
-    &__icon{
-      width: auto;
+    &__more {
+      margin: 6px 6px 6px 0;
+    }
+  }
+}
+@media (max-width: $md){
+  .container-collection {
+    &__main {
+      margin-top: 12px;
+    }
+    &__icon {
+      margin: 6px 6px 6px 0;
+      width: 65px;
+      height: 65px;
+    }
+    &__icon:first-child{
+      display: none;
+    }
+    &__icon:last-child{
+      display: none;
+    }
+    &__more {
+      width: 65px;
+      height: 65px;
+    }
+    &__p {
+      margin-top: 16px;
+      margin-left: -18px;
+    }
+  }
+}
+@media (max-width: $xs){
+  .container-collection {
+    &__main {
+      margin: 16px auto;
     }
   }
 }

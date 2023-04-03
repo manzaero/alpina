@@ -210,15 +210,16 @@
     &__market {
       margin-left: -12px;
     }
-  }
-}
-@media (max-width: $xsx) {
-  .navbar-contact{
     &__img {
       width: 64px;
       height: 28px;
       padding-left: 50px;
     }
+  }
+}
+@media (max-width: $xs) {
+  .navbar-contact{
+
   }
 }
 
