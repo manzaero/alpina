@@ -1,6 +1,8 @@
 @import './color';
 .footer {
-
+  &__accordion {
+    display: none;
+  }
 }
 .col {
   &__header {
@@ -66,6 +68,7 @@
 
 .row {
   &__footerEnd {
+    margin-top: 16px;
     padding-right: 160px;
     display: flex !important;
     flex-direction: row;
@@ -75,5 +78,31 @@
     line-height: 16px;
     letter-spacing: 0.4px;
     padding-bottom: 16px;
+  }
+}
+
+@media (max-width: $lg){
+  .row {
+    &__footerEnd {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    &__footerEnd div {
+      text-align: center;
+      margin-top: 18px;
+    }
+  }
+  .footer{
+    &__hide {
+      display: none;
+    }
+    &__accordion {
+      display: inline;
+      margin-bottom: 32px;
+    }
+  }
+  .col:last-child ul{
+    text-align: center;
   }
 }

@@ -3,7 +3,10 @@
     <hr>
     <div class="container  container__paddingFooter">
       <div class="row">
-        <div class="col">
+        <div class="footer__accordion">
+          <the-accordion/>
+        </div>
+        <div class="col footer__hide">
           <ul class="list-unstyled">
             <li class="col__header">
               <a class="nav-link" href="">Каталог</a>
@@ -16,7 +19,7 @@
             <li><a class="nav-link nav-link__title" href="">Плитка, керамогранит и мозаика</a></li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col footer__hide">
           <ul class="list-unstyled">
             <li class="col__header">
               <a class="nav-link" href="">Покупателю</a>
@@ -29,7 +32,7 @@
             <li><a class="nav-link nav-link__title" href="">Для бизнеса</a></li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col footer__hide">
           <ul class="list-unstyled">
             <li class="col__header">
               <router-link to="/contact" class="nav-link">Контакты</router-link>
@@ -54,27 +57,27 @@
             <ul class="col d-flex mb-lg-0 list-unstyled">
               <li class="nav-item">
                 <a class="nav-link nav-link__footerIcon" target="_blank" href="https://instagram.com">
-                  <img src="../assets/image/footer/instagram.png" alt="">
+                  <img src="../../assets/image/footer/instagram.png" alt="">
                 </a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link nav-link__footerIcon" target="_blank" href="https://youtube.com">
-                  <img src="../assets/image/footer/youtube.png" alt="">
+                  <img src="../../assets/image/footer/youtube.png" alt="">
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link__footerIcon" target="_blank" href="https://pinterest.com">
-                  <img src="../assets/image/footer/Pint.png" alt="">
+                  <img src="../../assets/image/footer/Pint.png" alt="">
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link__footerIcon" target="_blank" href="#">
-                  <img src="../assets/image/footer/Group.png" alt="">
+                  <img src="../../assets/image/footer/Group.png" alt="">
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link__footerIcon" target="_blank" href="https://vk.com">
-                  <img src="../assets/image/footer/vk.png" alt="">
+                  <img src="../../assets/image/footer/vk.png" alt="">
                 </a>
               </li>
             </ul>
@@ -86,7 +89,7 @@
               <a class="nav-link" href="">Принимаем к оплате</a>
             </li>
             <li>
-              <img src="../assets/image/footer/card.png" alt="">
+              <img src="../../assets/image/footer/card.png" alt="">
             </li>
             <li class="col__opinion">
               <p>Нам важно ваше мнение</p>
@@ -102,10 +105,10 @@
     <div class="container">
       <div class="list-unstyled row__footerEnd">
         <div class="col__footerWidth">
-          <li>&copy 2020 Alpina Market. All rights reserved <a class="nav-link__footerPolitics" href="#">Политика конфиденциальности</a></li>
+          <li>&copy 2020 Alpina Market. All rights reserved</li>
         </div>
-        <div class="">
-
+        <div class="col__href">
+          <a class="nav-link__footerPolitics" href="#">Политика конфиденциальности</a>
         </div>
         <div class="col__contacts">
           <p>Developed by Legacystudio</p>
@@ -116,8 +119,10 @@
 </template>
 
 <script>
+import TheAccordion from "@/components/footer/TheAccordion";
 export default {
-  name: "TheFooter"
+  name: "TheFooter",
+  components: {TheAccordion}
 }
 </script>
 

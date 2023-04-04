@@ -1,5 +1,6 @@
 <template>
    <div class="popular">
+
      <div class="container">
        <div class="d-flex justify-content-between">
          <div class="d-flex__catalog">Популярные категории</div>
