@@ -12,7 +12,7 @@
         <a href="#">Позвонить или написать <i class="arrow down"></i></a>
       </div>
       <div class="navbar-contact__support">
-        <a href="#">О нас</a>
+        <router-link to="/about">О нас</router-link>
         <a href="#">Наши салоны</a>
         <a href="#">Оплата и доставка</a>
         <a href="#">Для бизнеса</a>
@@ -42,9 +42,9 @@
         <div class="navbar-contact__catalog">
           <a href="#">Мебель на заказ</a>
         </div>
-        <a href="#" class="navbar-contact__img">
+        <router-link to="/" class="navbar-contact__img">
           <img src="../../assets/image/logo.png" alt="">
-        </a>
+        </router-link>
       </div>
       <div class="navbar-contact__personal">
         <a class="navbar-contact__user" href="#">Andrew Shapin</a>
@@ -65,7 +65,12 @@
     <div class="container container__end">
       <div class="navbar-contact__bottom">
         <div class="navbar-contact__category">
-          <a href="#">Мебель</a>
+          <div class="navbar-contact__href">
+            <a href="#" @click="show = !show">Мебель</a>
+            <div class="navbar-contact__href-border" v-if="show"></div>
+          </div>
+          <hr>
+          <the-dropdown v-if="show"/>
         </div>
         <div class="navbar-contact__category">
           <a href="#">Мебельная фурнитура и комплектующие</a>

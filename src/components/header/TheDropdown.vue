@@ -1,5 +1,6 @@
 <template>
-  <div class="container-fluid container__drop">
+  <div class="container__drop">
+    <hr>
     <div class="container container__left">
       <div class="drop-menu row">
         <div class="col col__drop-menu">

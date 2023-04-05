@@ -1,35 +1,39 @@
 .container {
   &__drop {
+    width: 100%;
+    top: 0;
     left: 0;
-    padding-left: 32px;
     margin: 60px 0 0 0;
     background-color: #fff;
     position: absolute;
     z-index: 10;
     color: #000000A6;
-    box-shadow: 0 20px 25px 5px rgba(0, 0, 0, .05);
+    box-shadow: 0 20px 25px 0 rgba(0, 0, 0, .05);
+  }
+  &__drop hr {
+    margin-bottom: 32px;
   }
 }
 
 .drop-menu {
   &__title {
+    margin-top: 12px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.4px;
     &:hover{
       transition: color 1s;
-      color: #000000;
+      color: $black;
       cursor: pointer;
     }
   }
 }
 .col {
   &__drop-menu{
-    padding: 0 10px;
+
   }
   &__right {
-    margin: 0 10px 0 -5px ;
   }
 }
 .btn{

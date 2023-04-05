@@ -2,6 +2,18 @@
 @import './the-adaptive';
 .navbar-contact {
   display: flex;
+  &__href {
+    position: relative;
+  }
+  &__href-border {
+    position: absolute;
+    width: 100%;
+    background-color: $black;
+    bottom: -22px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 3px;
+  }
   &__burger {
     display: none;
   }
