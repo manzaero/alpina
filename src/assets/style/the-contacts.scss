@@ -1,0 +1,105 @@
+.contacts {
+  &__title {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    margin-top: 16px;
+  }
+  &__button-city {
+    margin-top: 40px;
+  }
+  &__button-city button {
+    width: 90px;
+    height: 32px;
+    padding: 2px;
+    margin: 0 16px 40px 0;
+    background-color: $lightgray;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card{
+    width: 420px;
+    height: 345px;
+    background-color: $lightgray;
+    margin-right: 16px;
+  }
+  &__street {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 24px 0 24px;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  &__route {
+    position: relative;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  &__route::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    background-color: $black;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 2px;
+  }
+  &__offers {
+    display: flex;
+    margin: 62px 0 0 24px;
+  }
+  &__hour {
+    margin-left: 16px;
+  }
+  &__call {
+    display: flex;
+    margin: 24px 0 0 24px;
+  }
+  &__phone {
+    margin-left: 16px;
+  }
+  &__mailto {
+    display: flex;
+    margin: 24px 0 0 24px;
+  }
+  &__mail {
+    margin-left: 16px;
+  }
+  &__way {
+    display: flex;
+    margin: 12px 0 32px 40px;
+  }
+  &__way-position {
+    margin-right: 7.5%;
+  }
+  &__list-border::before, &__map-border::before {
+    content: "";
+    position: absolute;
+    width: 8%;
+    background-color: $black;
+    transform: translate(-25%, 0);
+    height: 2px;
+  }
+}
+.contacts hr {
+  margin: -32px 0 32px 0;
+}
