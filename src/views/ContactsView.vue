@@ -12,47 +12,44 @@
         Наши салоны
       </div>
       <div class="contacts__button-city">
-        <button class="btn">Тюмень</button>
-        <button class="btn">Челябинск</button>
-        <button class="btn">Москва</button>
-        <button class="btn">Сыктывкар</button>
-        <button class="btn">Сочи</button>
+        <a :class="['contacts__button-city-btn', {active: locations === tab}]" v-for="{name, tab} in location" :key="tab" @click="locations = tab">{{ name }}</a>
       </div>
-      <div class="contacts__way">
-        <div class="contacts__way-position"
-             v-for="{tab, name} in tabs"
-             :key="tab"
-             >
-          <a class="contacts__way-list" @click="component = tab">{{ name }}</a>
-          <div :class="['contacts__list-border', {active: component===tab}]"></div>
-        </div>
-      </div>
-      <hr>
+      <component :is="locations"/>
     </div>
-    <component :is="component"></component>
   </div>
 </template>
 
 <script>
-import TheList from "@/components/contacts/TheList";
-import TheMap from "@/components/contacts/TheMap";
+import TheTyumen from "@/components/contacts/TheTyumen";
 export default {
   data(){
     return {
-      tabs: [
+      location:[
         {
-          tab: 'TheList',
-          name: 'Список'
+          name: 'Тюмень',
+          tab:'TheTyumen'
         },
         {
-          tab: 'TheMap',
-          name: 'На карте'
+          name: 'Челябинск',
+          tab: 'TheChelyabinsk'
+        },
+        {
+          name: 'Москва',
+          tab: 'TheMoskow'
+        },
+        {
+          name: 'Сыктывкар',
+          tab: 'TheSiktivkar'
+        },
+        {
+          name: 'Сочи',
+          tab: 'TheSochi'
         }
       ],
-      component:'TheList'
+      locations:'TheTyumen'
     }
   },
   name: "ContactsView",
-  components:{TheList, TheMap}
+  components:{TheTyumen}
 }
 </script>

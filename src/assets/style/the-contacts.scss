@@ -8,18 +8,27 @@
   }
   &__button-city {
     margin-top: 40px;
+    display: flex;
+    justify-content: start;
   }
-  &__button-city button {
+  &__button-city-btn {
     width: 90px;
-    height: 32px;
+    height: 26px;
     padding: 2px;
     margin: 0 16px 40px 0;
     background-color: $lightgray;
     border-radius: 16px;
     font-weight: 400;
     font-size: 14px;
+    text-align: center;
+    cursor: pointer;
     line-height: 20px;
     letter-spacing: 0.25px;
+  }
+  &__button-city-btn.active, &__button-city-btn:hover{
+    background-color: $black;
+    color: $white;
+    transition: 0.3s;
   }
   &__list {
     display: flex;
