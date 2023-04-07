@@ -107,7 +107,3 @@ export default {
   name: "TheList"
 }
 </script>
-
-<style scoped>
-
-</style>

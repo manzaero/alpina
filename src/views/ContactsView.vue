@@ -12,7 +12,9 @@
         Наши салоны
       </div>
       <div class="contacts__button-city">
-        <a :class="['contacts__button-city-btn', {active: locations === tab}]" v-for="{name, tab} in location" :key="tab" @click="locations = tab">{{ name }}</a>
+        <a :class="['contacts__button-city-btn', {active: locations === tab}]"
+           v-for="{name, tab} in location"
+           :key="tab" @click="locations = tab">{{ name }}</a>
       </div>
       <component :is="locations"/>
     </div>
