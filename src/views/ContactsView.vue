@@ -19,29 +19,40 @@
         <button class="btn">Сочи</button>
       </div>
       <div class="contacts__way">
-        <div class="contacts__way-position">
-          <a class="contacts__way-list" href="">Списком</a>
-          <div class="contacts__list-border"></div>
-        </div>
-        <div class="contacts__map-position">
-          <a class="contacts__way-map" href="">На карте</a>
-          <div class="contacts__map-border"></div>
+        <div class="contacts__way-position"
+             v-for="{tab, name} in tabs"
+             :key="tab"
+             >
+          <a class="contacts__way-list" @click="component = tab">{{ name }}</a>
+          <div :class="['contacts__list-border', {active: component===tab}]"></div>
         </div>
       </div>
       <hr>
     </div>
-    <the-list/>
+    <component :is="component"></component>
   </div>
 </template>
 
 <script>
 import TheList from "@/components/contacts/TheList";
+import TheMap from "@/components/contacts/TheMap";
 export default {
+  data(){
+    return {
+      tabs: [
+        {
+          tab: 'TheList',
+          name: 'Список'
+        },
+        {
+          tab: 'TheMap',
+          name: 'На карте'
+        }
+      ],
+      component:'TheList'
+    }
+  },
   name: "ContactsView",
-  components:{TheList}
+  components:{TheList, TheMap}
 }
 </script>
-
-<style scoped>
-
-</style>

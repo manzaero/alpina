@@ -31,6 +31,9 @@
     background-color: $lightgray;
     margin-right: 16px;
   }
+  &__card:last-child {
+    margin-right: 0;
+  }
   &__street {
     display: flex;
     justify-content: space-between;
@@ -91,15 +94,18 @@
   &__way-position {
     margin-right: 7.5%;
   }
-  &__list-border::before, &__map-border::before {
+  &__way-list, &__way-map {
+    cursor: pointer;
+  }
+  &__list-border.active::before, &__map-border.active::before {
     content: "";
     position: absolute;
-    width: 8%;
+    width: 7%;
     background-color: $black;
-    transform: translate(-25%, 0);
-    height: 2px;
+    transform: translate(-30%, 0);
+    height: 3px;
   }
 }
 .contacts hr {
-  margin: -32px 0 32px 0;
+  margin: -30px 0 32px 0;
 }
