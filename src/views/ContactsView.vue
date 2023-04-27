@@ -22,14 +22,14 @@
 </template>
 
 <script>
-import TheTyumen from "@/components/contacts/TheTyumen";
+import TheCity from "@/components/contacts/TheCity";
 export default {
   data(){
     return {
       location:[
         {
           name: 'Тюмень',
-          tab:'TheTyumen'
+          tab:'TheCity'
         },
         {
           name: 'Челябинск',
@@ -48,10 +48,10 @@ export default {
           tab: 'TheSochi'
         }
       ],
-      locations:'TheTyumen'
+      locations:'TheCity'
     }
   },
   name: "ContactsView",
-  components:{TheTyumen}
+  components:{TheCity}
 }
 </script>

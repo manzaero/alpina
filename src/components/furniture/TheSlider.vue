@@ -15,9 +15,9 @@
 
 <script>
 import {slides} from "@/const/data-value";
-import { defineComponent } from 'vue'
-import { Carousel, Navigation, Slide } from 'vue3-carousel'
-import 'vue3-carousel/dist/carousel.css'
+import { defineComponent } from 'vue';
+import { Carousel, Navigation, Slide } from 'vue3-carousel';
+import 'vue3-carousel/dist/carousel.css';
 
 export default defineComponent({
   name: 'WrapAround',
