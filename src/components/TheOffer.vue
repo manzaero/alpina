@@ -14,7 +14,7 @@
           <a href="#" class="offers__hover">
             <img class="offers__heart" :src="require(`../assets/image/main/offer/${item.png}.png`)" alt="">
           </a>
-          <div href="#" class="offers__img">
+          <div class="offers__img">
             <a href="#">
               <img class="offer__img-main" :src="require(`../assets/image/main/offer/${item.img}.png`)" alt="">
             </a>
