@@ -5,7 +5,7 @@
                 <img :src="require(`../../assets/image/catalogue/${item.img}.png`)" alt="">
             </div>
             <ul>
-                <li>{{ item.name[0] }}</li>
+                <router-link to="/catalogue/stick">{{ item.name[0] }}</router-link>
                 <li>{{ item.name[1] }}</li>
                 <li>{{ item.name[2] }}</li>
                 <li>{{ item.name[3] }}</li>

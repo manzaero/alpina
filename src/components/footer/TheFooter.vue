@@ -12,7 +12,7 @@
               <a class="nav-link" href="">Каталог</a>
             </li>
             <li><a class="nav-link nav-link__title" href="">Акции</a></li>
-            <li><a class="nav-link nav-link__title" href="">Мебель</a></li>
+              <router-link to="/catalogue/stick"><a class="nav-link nav-link__title" href="">Мебель</a></router-link>
             <li><a class="nav-link nav-link__title" href="">Список комнат</a></li>
             <li><a class="nav-link nav-link__title" href="">Товары для дома</a></li>
             <li><a class="nav-link nav-link__title" href="">Фурнитура и комплектующие</a></li>

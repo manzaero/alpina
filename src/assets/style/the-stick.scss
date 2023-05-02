@@ -1,0 +1,54 @@
+.stick {
+  &__menu {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+    height: 170px;
+  }
+  &__menu-card {
+    width: 100px;
+    height: 100px;
+    background-color: $lightgray;
+  }
+  &__menu-img {
+
+  }
+  &__menu-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 16px;
+  }
+  &__filter-box {
+    display: flex;
+  }
+  &__filter {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__filter-drop {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  &__clear-title {
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  &__clear {
+    border-bottom: 1px solid $black;
+    width: 68px;
+    margin-top: -18px;
+  }
+  &__button {
+    margin-right: 16px;
+    border: 1px solid $black;
+    border-radius: 3px;
+    padding: 3px 24px;
+  }
+}
