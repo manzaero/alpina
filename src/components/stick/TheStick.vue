@@ -44,13 +44,41 @@
                   </div>
               </div>
           </div>
+          <div class="stick__card-box">
+              <div class="row row-cols-4 offer">
+                  <div class="col offers" v-for="item in stickCard" :key="item.id">
+              <stick-card
+                      :sale="item.sale"
+                      :png="item.png"
+                      :img="item.img"
+                      :name="item.name"
+                      :price="item.price"
+                      :oldPrice="item.oldPrice"
+                      :size="item.size"
+                      :icon1="item.icon1"
+                      :icon2="item.icon2"
+                      :icon3="item.icon3"
+                      :cart="item.cart"
+                      />
+                  </div>
+              </div>
+          </div>
       </div>
 </template>
 
 <script>
+import StickCard from "@/components/stick/StickCard.vue";
+import {stickCard} from "@/const/stick";
+
 export default {
+    data(){
+      return {
+          stickCard
+      }
+    },
     props:['stick-menu', 'stick-button'],
-    name: "StickView"
+    name: "StickView",
+    components:{StickCard}
 }
 </script>
 
