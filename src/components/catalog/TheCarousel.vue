@@ -2,7 +2,7 @@
   <Carousel class="carousel__width" :autoplay="5000" :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in catalog" :key="slide">
       <a href="#" class="carousel__item">
-        <img  class="carousel__img" :src="require(`../../assets/image/main/catalog/${slide.img}.png`)" alt="slide.name">
+        <img  class="carousel__img" :src="require(`@/assets/image/main/catalog/${slide.img}.png`)" alt="slide.name">
         <p class="carousel__text">{{ slide.name }}</p>
       </a>
 

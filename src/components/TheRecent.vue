@@ -5,7 +5,7 @@
       <div class="grid">
         <div class="recent-col__main" v-for="recent in theRecent" :key="recent.id">
           <a href="#" class="recent-col__img-container">
-            <img class="recent-col__img" :src="require(`../assets/image/main/recent/${recent.img}.png`)" alt="">
+            <img class="recent-col__img" :src="require(`@/assets/image/main/recent/${recent.img}.png`)" alt="">
           </a>
           <div class="recent-col__title">
             <a href="#" class="recent-col__text">{{ recent.name }}</a>

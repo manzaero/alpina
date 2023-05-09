@@ -13,7 +13,7 @@
          <div class="d-flex__grid">
            <a v-for="category in categories" :key="category.id">
              <div class="form">
-              <img class="form__img" :src="require(`../assets/image/main/category/${category.img}.png`)" alt="">
+              <img class="form__img" :src="require(`@/assets/image/main/category/${category.img}.png`)" alt="">
              </div>
              <p class="text-params">{{ category.name }}</p>
            </a>

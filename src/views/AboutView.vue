@@ -47,7 +47,7 @@
     </div>
     <div class="about__img">
       <div v-for="img in about" :key="img.id">
-        <img :src="require(`../assets/image/about/${img.src}.png`)" alt="">
+        <img :src="require(`@/assets/image/about/${img.src}.png`)" alt="">
       </div>
     </div>
     <div class="about__description">

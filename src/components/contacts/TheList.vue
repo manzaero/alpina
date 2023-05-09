@@ -7,7 +7,7 @@
       </div>
       <div class="contacts__offers">
         <div>
-          <img src="../../assets/image/contacts/clock.png" alt="" class="contacts__clock-icon">
+          <img src="@/assets/image/contacts/clock.png" alt="" class="contacts__clock-icon">
         </div>
         <div class="contacts__hour">
           <div class="contacts__today">Сегодня с 10:00 до 19:00</div>
@@ -16,7 +16,7 @@
       </div>
       <div class="contacts__call">
         <div>
-          <img src="../../assets/image/contacts/tel.png" alt="" class="contacts__tel-icon">
+          <img src="@/assets/image/contacts/tel.png" alt="" class="contacts__tel-icon">
         </div>
         <div class="contacts__phone">
           <div class="contacts__tel-number">+7 (3452) 54‒61‒62</div>
@@ -25,7 +25,7 @@
       </div>
       <div class="contacts__mailto">
         <div>
-          <img src="../../assets/image/contacts/mail.png" alt="" class="contacts__mail-icon">
+          <img src="@/assets/image/contacts/mail.png" alt="" class="contacts__mail-icon">
         </div>
         <div class="contacts__mail">
           <div class="contacts__mail-name">Dryppa90@gmail.com</div>
@@ -40,7 +40,7 @@
       </div>
       <div class="contacts__offers">
         <div>
-          <img src="../../assets/image/contacts/clock.png" alt="" class="contacts__clock-icon">
+          <img src="@/assets/image/contacts/clock.png" alt="" class="contacts__clock-icon">
         </div>
         <div class="contacts__hour">
           <div class="contacts__today">Сегодня с 10:00 до 19:00</div>
@@ -49,7 +49,7 @@
       </div>
       <div class="contacts__call">
         <div>
-          <img src="../../assets/image/contacts/tel.png" alt="" class="contacts__tel-icon">
+          <img src="@/assets/image/contacts/tel.png" alt="" class="contacts__tel-icon">
         </div>
         <div class="contacts__phone">
           <div class="contacts__tel-number">+7 (3452) 54‒61‒62</div>
@@ -58,7 +58,7 @@
       </div>
       <div class="contacts__mailto">
         <div>
-          <img src="../../assets/image/contacts/mail.png" alt="" class="contacts__mail-icon">
+          <img src="@/assets/image/contacts/mail.png" alt="" class="contacts__mail-icon">
         </div>
         <div class="contacts__mail">
           <div class="contacts__mail-name">Dryppa90@gmail.com</div>
@@ -73,7 +73,7 @@
       </div>
       <div class="contacts__offers">
         <div>
-          <img src="../../assets/image/contacts/clock.png" alt="" class="contacts__clock-icon">
+          <img src="@/assets/image/contacts/clock.png" alt="" class="contacts__clock-icon">
         </div>
         <div class="contacts__hour">
           <div class="contacts__today">Сегодня с 10:00 до 19:00</div>
@@ -82,7 +82,7 @@
       </div>
       <div class="contacts__call">
         <div>
-          <img src="../../assets/image/contacts/tel.png" alt="" class="contacts__tel-icon">
+          <img src="@/assets/image/contacts/tel.png" alt="" class="contacts__tel-icon">
         </div>
         <div class="contacts__phone">
           <div class="contacts__tel-number">+7 (3452) 54‒61‒62</div>
@@ -91,7 +91,7 @@
       </div>
       <div class="contacts__mailto">
         <div>
-          <img src="../../assets/image/contacts/mail.png" alt="" class="contacts__mail-icon">
+          <img src="@/assets/image/contacts/mail.png" alt="" class="contacts__mail-icon">
         </div>
         <div class="contacts__mail">
           <div class="contacts__mail-name">Dryppa90@gmail.com</div>

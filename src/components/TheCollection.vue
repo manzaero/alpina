@@ -9,13 +9,13 @@
     </div>
     <div class="container-collection">
       <div class="container-collection__img-container" v-for="collect in theCollection" :key="collect.id">
-        <img :src="require(`../assets/image/main/collection/${collect.img}.png`)" alt="" class="container-collection__img">
+        <img :src="require(`@/assets/image/main/collection/${collect.img}.png`)" alt="" class="container-collection__img">
         <div class="container-collection__box">
           <div class="container-collection__box-icon">
-            <img class="container-collection__icon" :src="require(`../assets/image/main/collection/${collect.icon1}.png`)" alt="">
-            <img class="container-collection__icon" :src="require(`../assets/image/main/collection/${collect.icon2}.png`)" alt="">
-            <img class="container-collection__icon" :src="require(`../assets/image/main/collection/${collect.icon3}.png`)" alt="">
-            <img class="container-collection__icon" :src="require(`../assets/image/main/collection/${collect.icon4}.png`)" alt="">
+            <img class="container-collection__icon" :src="require(`@/assets/image/main/collection/${collect.icon1}.png`)" alt="">
+            <img class="container-collection__icon" :src="require(`@/assets/image/main/collection/${collect.icon2}.png`)" alt="">
+            <img class="container-collection__icon" :src="require(`@/assets/image/main/collection/${collect.icon3}.png`)" alt="">
+            <img class="container-collection__icon" :src="require(`@/assets/image/main/collection/${collect.icon4}.png`)" alt="">
           </div>
           <div class="container-collection__more">
             <div class="container-collection__p">

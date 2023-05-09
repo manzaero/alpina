@@ -2,7 +2,7 @@
     <div class="catalogue__card">
         <div class="catalogue__card-item" v-for="item in catalogue" :key="item.id">
             <div class="catalogue__card-img">
-                <img :src="require(`../../assets/image/catalogue/${item.img}.png`)" alt="">
+                <img :src="require(`@/assets/image/catalogue/${item.img}.png`)" alt="">
             </div>
             <ul>
                 <router-link to="/catalogue/stick">{{ item.name[0] }}</router-link>

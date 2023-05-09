@@ -4,7 +4,7 @@
     <div class="container  container__paddingFooter">
       <div class="row">
         <div class="footer__accordion">
-          <the-accordion/>
+          <footer-accordion/>
         </div>
         <div class="col footer__hide">
           <ul class="list-unstyled">
@@ -57,27 +57,27 @@
             <ul class="col d-flex mb-lg-0 list-unstyled">
               <li class="nav-item">
                 <a class="nav-link nav-link__footerIcon" target="_blank" href="https://instagram.com">
-                  <img src="../../assets/image/footer/instagram.png" alt="">
+                  <img src="@/assets/image/footer/instagram.png" alt="">
                 </a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link nav-link__footerIcon" target="_blank" href="https://youtube.com">
-                  <img src="../../assets/image/footer/youtube.png" alt="">
+                  <img src="@/assets/image/footer/youtube.png" alt="">
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link__footerIcon" target="_blank" href="https://pinterest.com">
-                  <img src="../../assets/image/footer/Pint.png" alt="">
+                  <img src="@/assets/image/footer/Pint.png" alt="">
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link__footerIcon" target="_blank" href="#">
-                  <img src="../../assets/image/footer/Group.png" alt="">
+                  <img src="@/assets/image/footer/Group.png" alt="">
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link__footerIcon" target="_blank" href="https://vk.com">
-                  <img src="../../assets/image/footer/vk.png" alt="">
+                  <img src="@/assets/image/footer/vk.png" alt="">
                 </a>
               </li>
             </ul>
@@ -89,7 +89,7 @@
               <a class="nav-link" href="">Принимаем к оплате</a>
             </li>
             <li>
-              <img src="../../assets/image/footer/card.png" alt="">
+              <img src="@/assets/image/footer/card.png" alt="">
             </li>
             <li class="col__opinion">
               <p>Нам важно ваше мнение</p>
@@ -119,10 +119,11 @@
 </template>
 
 <script>
-import TheAccordion from "@/components/footer/TheAccordion";
+import TheAccordion from "@/components/TheAccordion.vue";
+import FooterAccordion from "@/components/footer/FooterAccordion.vue";
 export default {
   name: "TheFooter",
-  components: {TheAccordion}
+  components: {FooterAccordion, TheAccordion}
 }
 </script>
 

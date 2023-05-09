@@ -2,7 +2,7 @@
   <Carousel class="carousel__width" :autoplay="4000" :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in production" :key="slide">
       <a href="#" class="">
-         <img class="production__slide-img" :src="require(`../../assets/image/main/production/${slide.img}.png`)">
+         <img class="production__slide-img" :src="require(`@/assets/image/main/production/${slide.img}.png`)">
       </a>
     </Slide>
     <template #addons>

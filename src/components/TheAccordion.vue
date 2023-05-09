@@ -52,27 +52,27 @@
           <ul class="col d-flex mb-lg-0 list-unstyled">
             <li class="nav-item">
               <a class="nav-link nav-link__footerIcon" target="_blank" href="https://instagram.com">
-                <img src="../../assets/image/footer/instagram.png" alt="">
+                <img src="@/assets/image/footer/instagram.png" alt="">
               </a>
             </li>
             <li class="nav-item ">
               <a class="nav-link nav-link__footerIcon" target="_blank" href="https://youtube.com">
-                <img src="../../assets/image/footer/youtube.png" alt="">
+                <img src="@/assets/image/footer/youtube.png" alt="">
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link__footerIcon" target="_blank" href="https://pinterest.com">
-                <img src="../../assets/image/footer/Pint.png" alt="">
+                <img src="@/assets/image/footer/Pint.png" alt="">
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link__footerIcon" target="_blank" href="#">
-                <img src="../../assets/image/footer/Group.png" alt="">
+                <img src="@/assets/image/footer/Group.png" alt="">
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link__footerIcon" target="_blank" href="https://vk.com">
-                <img src="../../assets/image/footer/vk.png" alt="">
+                <img src="@/assets/image/footer/vk.png" alt="">
               </a>
             </li>
           </ul>
@@ -84,8 +84,18 @@
 
 <script>
 export default {
-name: "TheAccordion"
-}
+    props:{
+      catalog:'',
+       buyer:'',
+       contacts:'',
+        payment:'',
+        stock:'',
+        stick:'',
+        products:'',
+
+    },
+    name: "TheAccordion"
+    }
 </script>
 
 <style scoped>

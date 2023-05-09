@@ -8,10 +8,9 @@
   &__menu-card {
     width: 100px;
     height: 100px;
-    background-color: $lightgray;
   }
   &__menu-img {
-
+    background-color: $lightgray;
   }
   &__menu-name {
     font-weight: 400;
@@ -50,5 +49,121 @@
     border: 1px solid $black;
     border-radius: 3px;
     padding: 3px 24px;
+  }
+  &__ticker {
+    margin-top: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &__ticker span {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  &__more {
+    margin-top: 16px;
+    text-align: center;
+  }
+  &__more-button {
+    border: 1px solid $black;
+    border-radius: 3px;
+    padding: 3px 24px;
+  }
+  &__detailed {
+    max-width: 680px;
+    margin: 62px auto 0;
+  }
+  &__detailed-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__detailed-shadow {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__detailed-heavy {
+    -webkit-mask: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 1) 0%,
+                    rgba(0, 0, 0, 0)100%
+    );
+  }
+  &__details-drop {
+    transition: opacity .5s;
+  }
+  &__filter-icon {
+    display: none;
+  }
+}
+@media (max-width: $lgx){
+  .grid {
+    display: grid;
+    grid-row-gap: 60px;
+    grid-template-columns: 130px 130px 130px 130px 130px;
+  }
+  .stick {
+    &__menu {
+      margin: 32px 0 170px 0;
+    }
+
+  }
+}
+@media (max-width: $mdx){
+  .grid {
+    display: grid;
+    grid-row-gap: 60px;
+    grid-template-columns: 130px 130px 130px 130px;
+  }
+  .stick {
+    &__menu {
+      margin: 32px 0 300px 0;
+    }
+    &__filter {
+      display: none;
+    }
+    &__filter-icon {
+      display:flex;
+      justify-content: space-between;
+      margin: 0 24px;
+    }
+  }
+  .filter-icon {
+    &__sort, &__filter {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+@media (max-width: $md){
+  .grid {
+    display: grid;
+    grid-row-gap: 60px;
+    grid-template-columns: 130px 130px 130px;
+  }
+  .stick {
+    &__menu {
+      margin: 32px 0 500px 32px;
+    }
+
+  }
+}
+@media (max-width: $xsx){
+  .grid {
+    display: grid;
+    grid-row-gap: 60px;
+    grid-template-columns: 130px 130px;
+  }
+  .stick {
+    &__menu {
+      margin: 32px 0 650px 32px;
+    }
+    &__detailed {
+      margin: 24px 16px;
+    }
   }
 }

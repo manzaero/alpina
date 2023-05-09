@@ -57,7 +57,7 @@
         <div class="col col__right">
           <ul class="list-unstyled">
             <div class="drop-position" v-for="data in dropMenu" :key="data.id">
-              <img :src="require(`../../assets/image/header/${data.img}.png`)" alt="">
+              <img :src="require(`@/assets/image/header/${data.img}.png`)" alt="">
               <button class="btn btn__drop-btn">{{ data.name }}</button>
             </div>
           </ul>

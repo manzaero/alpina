@@ -27,8 +27,8 @@
           <the-burger/>
         </div>
         <a href="#" class="navbar-contact__burger-position">
-          <img src="../../assets/image/header/Chats.png" alt="">
-          <img class="navbar-contact__burger-frame" src="../../assets/image/header/Frame.png" alt="">
+          <img src="@/assets/image/header/Chats.png" alt="">
+          <img class="navbar-contact__burger-frame" src="@/assets/image/header/Frame.png" alt="">
         </a>
         <div class="navbar-contact__catalog">
           <router-link to="/catalogue" >Каталог</router-link>
@@ -43,20 +43,20 @@
           <a href="#">Мебель на заказ</a>
         </div>
         <router-link to="/" class="navbar-contact__img">
-          <img src="../../assets/image/logo.png" alt="">
+          <img src="@/assets/image/logo.png" alt="">
         </router-link>
       </div>
       <div class="navbar-contact__personal">
         <a class="navbar-contact__user" href="#">Andrew Shapin</a>
         <a href="#" class="navbar-contact__position">
-          <img src="../../assets/image/header/Chats.png" alt="">
-          <img class="navbar-contact__frame" src="../../assets/image/header/Frame.png" alt="">
+          <img src="@/assets/image/header/Chats.png" alt="">
+          <img class="navbar-contact__frame" src="@/assets/image/header/Frame.png" alt="">
         </a>
         <a href="#">
-          <img src="../../assets/image/header/Group.png" alt="">
+          <img src="@/assets/image/header/Group.png" alt="">
         </a>
         <a href="#">
-          <img src="../../assets/image/header/Bask.png" alt="">
+          <img src="@/assets/image/header/Bask.png" alt="">
         </a>
       </div>
     </div>
@@ -87,7 +87,7 @@
       </div>
       <div class="navbar-contact__search">
         <input class="navbar-contact__search-form" placeholder="Белый стул" type="search">
-        <img class="navbar-contact__search-icon" src="../../assets/image/header/search.png" alt="">
+        <img class="navbar-contact__search-icon" src="@/assets/image/header/search.png" alt="">
       </div>
     </div>
   </div>

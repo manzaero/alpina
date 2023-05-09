@@ -28,3 +28,9 @@
 
 .dropdown-content a:hover {background-color: $lightgray;}
 .dropdown:hover .dropdown-content {display: block;}
+
+@media (max-width: $mdx){
+  .dropdown-content {
+    right: 0px;
+  }
+}

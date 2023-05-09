@@ -15,7 +15,7 @@
           <hr>
           <li class="menu__flex">
             <div class="menu__icon">
-              <img src="../../assets/image/header/user.png" alt="">
+              <img src="@/assets/image/header/user.png" alt="">
             </div>
             <span class="menu__item" href="#">Вход / Регистрация</span>
           </li>
@@ -34,7 +34,7 @@
           <li class="menu-box__cat" v-for="item in header" :key="item.id">
             <div class="menu__flex">
               <div class="menu__icon">
-                <img :src="require(`../../assets/image/header/${item.img}.png`)" alt="">
+                <img :src="require(`@/assets/image/header/${item.img}.png`)" alt="">
               </div>
               <span class="menu__name">{{ item.name }}</span>
             </div>

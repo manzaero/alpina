@@ -70,11 +70,6 @@ export const stickButton = [
         id:4,
         name: 'Размер',
         tab: 'size'
-    },
-    {
-        id:5,
-        name: 'Всё фильтры',
-        tab: 'all-filters'
     }
 ];
 

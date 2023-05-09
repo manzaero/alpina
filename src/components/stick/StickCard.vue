@@ -3,11 +3,11 @@
             <div class="offer__box">
                 <button class="offers__btn">{{ sale }}</button>
                 <a href="#" class="offers__hover">
-                    <img class="offers__heart" :src="require(`../../assets/image/main/offer/${png}.png`)" alt="">
+                    <img class="offers__heart" :src="require(`@/assets/image/main/offer/${png}.png`)" alt="">
                 </a>
                 <div class="offers__img">
                     <a href="#">
-                        <img class="offer__img-main" :src="require(`../../assets/image/main/offer/${img}.png`)" alt="">
+                        <img class="offer__img-main" :src="require(`@/assets/image/main/offer/${img}.png`)" alt="">
                     </a>
                 </div>
             </div>
@@ -26,13 +26,13 @@
             <div class="offers__d-flex">
                 <div class="row">
                     <a href="#" class="offers__col">
-                        <img class="offers__png" :src="require(`../../assets/image/main/offer/${icon1}.png`)" alt="">
+                        <img class="offers__png" :src="require(`@/assets/image/main/offer/${icon1}.png`)" alt="">
                     </a>
                     <a href="#" class="offers__col">
-                        <img class="offers__png"  :src="require(`../../assets/image/main/offer/${icon2}.png`)" alt="">
+                        <img class="offers__png"  :src="require(`@/assets/image/main/offer/${icon2}.png`)" alt="">
                     </a>
                     <a href="#" class="offers__col">
-                        <img class="offers__png" :src="require(`../../assets/image/main/offer/${icon3}.png`)" alt="">
+                        <img class="offers__png" :src="require(`@/assets/image/main/offer/${icon3}.png`)" alt="">
                     </a>
                     <a href="#" class="offers__col">
                         <span>+5</span>
