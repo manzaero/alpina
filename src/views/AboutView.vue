@@ -66,7 +66,8 @@
 
 <script>
 import TheSlideProd from "@/components/production/TheSlideProd";
-import {production, about} from "@/const/data-value";
+import {production} from "@/const/data-production";
+import {about} from "@/const/data-about";
 export default {
   provide:{production},
   components:{TheSlideProd},

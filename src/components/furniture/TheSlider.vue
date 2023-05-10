@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import {slides} from "@/const/data-value";
+import {slides} from "@/const/data-slides";
 import { defineComponent } from 'vue';
 import { Carousel, Navigation, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';

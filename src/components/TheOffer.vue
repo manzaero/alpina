@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import {offers} from "@/const/data-value";
+import {offers} from "@/const/data-offers";
 import StickCard from "@/components/stick/StickCard.vue";
 export default {
   data(){

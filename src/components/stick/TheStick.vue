@@ -127,7 +127,7 @@
 <script>
 import StickCard from "@/components/stick/StickCard.vue";
 import TheModal from "@/components/stick/TheModal.vue";
-import {stickCard} from "@/const/stick";
+import {stickCard} from "@/const/stick-card";
 
 export default {
     data(){

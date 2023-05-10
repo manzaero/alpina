@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import {catalog} from "@/const/data-value";
+import {catalog} from "@/const/data-catalog";
 import TheCarousel from "@/components/catalog/TheCarousel";
 export default {
   data(){

@@ -18,13 +18,17 @@ import TheOffer from "@/components/TheOffer";
 import TheCollection from "@/components/TheCollection";
 import TheProduction from "@/components/production/TheProduction";
 import TheRecent from "@/components/TheRecent";
-import {catValue, collection, production, recent, header} from "@/const/data-value";
+import {category} from '@/const/data-category';
+import {collection} from "@/const/data-collections";
+import {production} from "@/const/data-production";
+import {recent} from "@/const/data-recent";
+
 export default {
   provide:{production},
   name: 'HomeView',
   data(){
     return {
-      categories:catValue,
+      categories:category,
       theCollection: collection,
       theRecent: recent
     }

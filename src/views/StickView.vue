@@ -9,7 +9,8 @@
 
 <script>
 import TheStick from "@/components/stick/TheStick.vue";
-import {stickMenu, stickButton} from "@/const/stick";
+import {stickMenu} from "@/const/stick-menu";
+import {stickButton} from "@/const/stick-button";
 export default {
     data(){
         return {

@@ -35,7 +35,8 @@ export const contactsValue = [
         id:2,
         name: 'Челябинск',
         tab:'TheChelyabinsk',
-        map:'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5743.656908238025!2d61.294870934950815!3d55.1592712781263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5924d4b1c66b9%3A0x4a63c38c9f80f5d4!2z0KLQvtC_0L7Qu9C40L3QutCw!5e0!3m2!1sru!2s!4v1681103677190!5m2!1sru!2s" width="1296" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',        listOne:[
+        map:'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5743.656908238025!2d61.294870934950815!3d55.1592712781263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5924d4b1c66b9%3A0x4a63c38c9f80f5d4!2z0KLQvtC_0L7Qu9C40L3QutCw!5e0!3m2!1sru!2s!4v1681103677190!5m2!1sru!2s" width="1296" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        listOne:[
             {
                 street: 'Пермякова',
                 house: '82',
