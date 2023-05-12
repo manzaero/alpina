@@ -26,6 +26,11 @@ const routes = [
     path: '/catalogue/stick',
     name: 'stick',
     component: () => import('../views/StickView.vue')
+  },
+  {
+    path: '/room',
+    name: 'room',
+    component: () => import('../views/RoomLists.vue')
   }
 ]
 

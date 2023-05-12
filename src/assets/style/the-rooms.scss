@@ -1,0 +1,49 @@
+.rooms {
+  margin-top: 16px;
+  &__title {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+  }
+  &__grid {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  &__grid-box {
+    max-width: 420px;
+  }
+  &__grid-box img {
+    width: 100%;
+  }
+  &__grid-box p {
+    margin-top: 16px;
+  }
+}
+@media (max-width: $lg){
+  .rooms {
+    &__grid {
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    &__grid-box p {
+      margin-top: 12px;
+    }
+  }
+}
+@media (max-width: $xsx){
+  .rooms {
+    &__grid {
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 8px;
+    }
+    &__grid-box p {
+      margin-top: 8px;
+    }
+  }
+}

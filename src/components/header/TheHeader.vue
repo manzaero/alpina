@@ -34,7 +34,7 @@
           <router-link to="/catalogue" >Каталог</router-link>
         </div>
         <div class="navbar-contact__catalog">
-          <a href="#">Комнаты</a>
+          <router-link to="/room">Комнаты</router-link>
         </div>
         <div class="navbar-contact__catalog">
           <a href="#">Дизайн-проекты</a>
