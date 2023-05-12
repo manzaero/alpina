@@ -3,13 +3,13 @@
             <div class="bread__crumbs">
                 <span
                         v-for="room in rooms"
-                        :key="room.id"
+                        key="room.id"
                 >
                     <router-link
                         :to="room.to"
                     >
                         {{ room.name }}
-                        <span v-if="room.id < 2">/ </span>
+                        <span >/ </span>
                     </router-link>
                 </span>
             </div>
@@ -19,9 +19,10 @@
 <script>
 export default {
     props:{
-        rooms: {
-            type: String,
-            require :true
+        rooms:{
+            id: String,
+            to: String,
+            name: String
         }
     },
     name: "BreadСrumbs"

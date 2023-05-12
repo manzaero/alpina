@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <bread-crumbs
+    <the-crumbs
       :rooms="rooms"
     />
     <div class="rooms">
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import BreadCrumbs from '@/components/BreadСrumbs.vue';
+import TheCrumbs from "@/components/TheCrumbs.vue";
 import {dataRooms} from "@/const/data-rooms";
 import {rooms} from '@/const/bread-crumbs/rooms'
 
@@ -35,7 +35,7 @@ export default {
       }
     },
     name: "RoomLists",
-    components:{BreadCrumbs}
+    components:{TheCrumbs}
 }
 </script>
 

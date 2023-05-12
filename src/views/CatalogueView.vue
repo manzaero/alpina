@@ -1,13 +1,9 @@
 <template>
   <div class="container">
       <div class="catalogue">
-          <div class="navigation-page">
-            <span>
-              <router-link to="/">Главная</router-link>
-              /
-              <router-link to="/catalogue">Каталог</router-link>
-            </span>
-          </div>
+
+          <the-crumbs :rooms="rooms"/>
+
           <div class="catalogue__title">Каталог</div>
           <div class="catalogue__discount">
               <div class="catalogue__discount-block">
@@ -24,15 +20,18 @@
 
 <script>
 import {catalogue} from "@/const/catalogue";
+import {catalogView} from "@/const/bread-crumbs/catalog-view";
 import TheCatalogue from "@/components/catalogue/TheCatalogue.vue";
+import TheCrumbs from "@/components/TheCrumbs.vue";
 
 export default {
     data(){
         return {
-            catalogue
+            catalogue,
+            rooms: catalogView
         }
     },
-    components:{TheCatalogue},
+    components:{ TheCatalogue, TheCrumbs},
     name: "CatalogueView"
 }
 </script>

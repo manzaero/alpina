@@ -61,7 +61,7 @@
       </div>
     </div>
   </div>
-  <div class="navbar">
+  <div class="navbar mb-4">
     <div class="container container__end">
       <div class="navbar-contact__bottom">
         <div class="navbar-contact__category">

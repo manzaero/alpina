@@ -4,15 +4,11 @@
                   v-if="isModal"
                   @closeModal="closeModalForm"
           />
-          <div class="navigation-page">
-            <span>
-              <router-link to="/">Главная</router-link>
-              /
-              <router-link to="/catalogue">Каталог</router-link>
-              /
-              <router-link to="/catalogue/stick">Мебель</router-link>
-            </span>
-          </div>
+
+          <the-crumbs
+            :rooms="rooms"
+          />
+
           <div class="catalogue__title">Мебель</div>
           <div class="stick__menu grid">
               <div class="stick__menu-card" v-for="stick in stickMenu" key="stick.id">
@@ -127,7 +123,10 @@
 <script>
 import StickCard from "@/components/stick/StickCard.vue";
 import TheModal from "@/components/stick/TheModal.vue";
+import TheCrumbs from "@/components/TheCrumbs.vue";
 import {stickCard} from "@/const/stick-card";
+import {theStick} from "@/const/bread-crumbs/the-stick";
+
 
 export default {
     data(){
@@ -135,7 +134,8 @@ export default {
           stickCard,
           active: false,
           showModal: true,
-          isModal: false
+          isModal: false,
+          rooms: theStick
       }
     },
     props:['stick-menu', 'stick-button'],
@@ -148,7 +148,7 @@ export default {
         }
     },
     name: "StickView",
-    components:{StickCard, TheModal}
+    components:{StickCard, TheModal, TheCrumbs}
 }
 </script>
 

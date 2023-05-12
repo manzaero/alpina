@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer mt-5">
     <hr>
     <div class="container  container__paddingFooter">
       <div class="row">
